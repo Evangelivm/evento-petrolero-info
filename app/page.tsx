@@ -272,9 +272,9 @@ export default function Home() {
           </nav>
           <div>
             <Button className="bg-amber-600 hover:bg-amber-700">
-              <Link href="#inscripciones-evento">
+              <a href="https://evento.reactivapetroltalara.online/">
                 ADQUIERE TUS TICKETS AL EVENTO
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
@@ -312,7 +312,9 @@ export default function Home() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Button size="lg" className="bg-amber-600 hover:bg-amber-700">
-                    <Link href="#inscripciones-evento">Inscríbete Ahora</Link>
+                    <a href="https://evento.reactivetroltalara.online/">
+                      Inscríbete Ahora
+                    </a>
                   </Button>
                   {/* <Button
                     size="lg"
@@ -769,7 +771,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* Organiza */}
         <section id="organiza" className="py-16 bg-slate-50">
