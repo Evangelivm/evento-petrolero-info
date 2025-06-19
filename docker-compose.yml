@@ -4,10 +4,10 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3002:3002" # El puerto interno de tu contenedor
+      - "3003:3003" # El puerto interno de tu contenedor
     environment:
       NODE_ENV: production
-      PORT: 3002
+      PORT: 3003
       HOSTNAME: 0.0.0.0
     restart: unless-stopped
     networks:
