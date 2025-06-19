@@ -229,18 +229,18 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto px-4 flex h-16 items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-amber-400 shadow-md">
+        <div className="container mx-auto sm:px-4 flex h-16 items-center justify-between px-2">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="relative h-8 w-8 sm:h-12 sm:w-12 overflow-hidden rounded-full border-2 border-amber-400 shadow-md">
               <Image
                 src="/oil-pump-logo.png"
                 alt="Reactiva-Petrol 2025 Logo"
-                width={48}
-                height={48}
-                className="object-cover"
+                width={32}
+                height={32}
+                className="object-cover h-8 w-8 sm:h-12 sm:w-12"
               />
             </div>
-            <span className="text-xl font-bold tracking-tight">
+            <span className="text-base sm:text-xl font-bold tracking-tight">
               Reactiva-Petrol <span className="text-amber-600">2025</span>
             </span>
           </div>
@@ -270,10 +270,13 @@ export default function Home() {
               Patrocinadores
             </Link>
           </nav>
-          <div>
-            <Button className="bg-amber-600 hover:bg-amber-700">
+          <div className="w-full max-w-[110px] md:max-w-none md:w-auto flex-shrink-0">
+            <Button className="bg-amber-600 hover:bg-amber-700 w-full md:w-auto text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2 h-7 sm:h-10 min-h-0">
               <a href="https://evento.reactivapetroltalara.online/">
-                ADQUIERE TUS TICKETS AL EVENTO
+                <span className="block truncate sm:hidden">TICKETS</span>
+                <span className="hidden sm:block truncate">
+                  ADQUIERE TUS TICKETS
+                </span>
               </a>
             </Button>
           </div>
@@ -292,7 +295,7 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="container relative z-10 py-20 md:py-32 lg:py-40 mx-auto px-4">
+          <div className="container relative z-10 py-12 sm:py-20 md:py-32 lg:py-40 mx-auto px-2 sm:px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               {/* Text Content */}
               <div className="max-w-3xl space-y-5">
@@ -311,7 +314,10 @@ export default function Home() {
                   exposiciones con los líderes de la industria.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Button size="lg" className="bg-amber-600 hover:bg-amber-700">
+                  <Button
+                    size="lg"
+                    className="bg-amber-600 hover:bg-amber-700 w-full sm:w-auto text-base"
+                  >
                     <a href="https://evento.reactivetroltalara.online/">
                       Inscríbete Ahora
                     </a>
@@ -326,10 +332,9 @@ export default function Home() {
                   </Button> */}
                 </div>
               </div>
-
               {/* Promotional Image */}
-              <div className="flex justify-center lg:justify-center">
-                <div className="max-w-lg w-full">
+              <div className="flex justify-center lg:justify-center mt-8 lg:mt-0">
+                <div className="max-w-xs sm:max-w-md md:max-w-lg w-full">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-12%20at%202.41.26%20PM-5eU2TQjOkMmciuzyRDsZTizpPtWHpG.jpeg"
                     alt="Congreso Internacional Reactivación Petrolera en la Región Piura - 12 al 14 Agosto 2025 - Hotel Pacifico Talara"
@@ -347,8 +352,8 @@ export default function Home() {
         {/* Promotional Image Section */}
 
         {/* Acerca del Evento */}
-        <section id="acerca" className="py-16 bg-slate-50">
-          <div className="container  mx-auto px-4">
+        <section id="acerca" className="py-12 sm:py-16 bg-slate-50">
+          <div className="container mx-auto px-2 sm:px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Acerca del Evento</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -359,7 +364,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
               <Card className="border-none shadow-md">
                 <CardContent className="pt-6">
                   <div className="flex flex-col items-center text-center">
@@ -425,8 +430,8 @@ export default function Home() {
         </section>
 
         {/* Ponentes Destacados */}
-        <section id="ponentes" className="py-16">
-          <div className="container  mx-auto px-4">
+        <section id="ponentes" className="py-12 sm:py-16">
+          <div className="container mx-auto px-2 sm:px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Ponentes Destacados</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -435,7 +440,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
               {[
                 {
                   name: "George (Bud)",
@@ -523,8 +528,8 @@ export default function Home() {
         </section>
 
         {/* Maestro de Ceremonia */}
-        <section id="maestro-ceremonia" className="py-16 bg-slate-50">
-          <div className="container  mx-auto px-4">
+        <section id="maestro-ceremonia" className="py-12 sm:py-16 bg-slate-50">
+          <div className="container mx-auto px-2 sm:px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Maestro de Ceremonia</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -774,8 +779,8 @@ export default function Home() {
         </section>
 
         {/* Organiza */}
-        <section id="organiza" className="py-16 bg-slate-50">
-          <div className="container  mx-auto px-4">
+        <section id="organiza" className="py-12 sm:py-16 bg-slate-50">
+          <div className="container mx-auto px-2 sm:px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Organiza</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -1178,8 +1183,8 @@ export default function Home() {
         </section> */}
 
         {/* Auspiciadores del Evento */}
-        <section id="auspiciadores" className="py-16 bg-slate-50">
-          <div className="container mx-auto px-4">
+        <section id="auspiciadores" className="py-12 sm:py-16 bg-slate-50">
+          <div className="container mx-auto px-2 sm:px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">
                 Auspiciadores del Evento
@@ -1194,7 +1199,7 @@ export default function Home() {
                 <h3 className="text-center text-xl font-semibold mb-6 text-amber-600">
                   Auspiciadores Crudos Superligeros (54 API)
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center">
                   {[
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250408-WA0007%281%29.jpg-t8Wc7ROtgD5fcJP2Db3KLP9gjN7Yyq.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LOGO%20GENERAL%20FULL%20HD%202-tc4PaWuIg1gA5Bwq4GzqS3lSab3ak7.png",
@@ -1299,7 +1304,7 @@ export default function Home() {
                   ))}
                 </div>
                 {/* Agregar segunda fila con 3 recuadros adicionales */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
                   {[
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250309-WA0041.jpg-qPZRw500wGxhxwkxlvWbhiiIHoAhSU.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/go-EM7SpR01m2GAU4nJnY4trm6Ge3eGZX.png",
@@ -1352,7 +1357,7 @@ export default function Home() {
                   ))}
                 </div>
                 {/* Agregar tercera fila con 3 recuadros adicionales */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
                   {[
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%2010.09.48%20AM-MwJzkFWJZkghvGG20Tep7uyteMZf7d.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%203.45.16%20PM-MKlWGnArxQC50YkjOPOGBIMC9aK7et.jpeg",
@@ -1411,7 +1416,7 @@ export default function Home() {
                   ))}
                 </div>
                 {/* Agregar cuarta fila con 3 recuadros adicionales */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
                   {[
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%209.32.59%20PM-kal8xWcZUnE8fmaCBEDYdDSXHoxFNB.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%209.33.00%20PM-cwUZi3Adr1RGm9KmewxWbcN6srj3R1.jpeg",
@@ -1452,8 +1457,8 @@ export default function Home() {
           </div>
         </section>
         {/* Media Partners */}
-        <section id="media-partners" className="py-16">
-          <div className="container mx-auto px-4">
+        <section id="media-partners" className="py-12 sm:py-16">
+          <div className="container mx-auto px-2 sm:px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Media Partners</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -1461,7 +1466,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 items-center justify-items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center">
               {[
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LOGO%20TIERRA%20ADENTRO%20HORIZONAL%20EN%20ALTAS-3tCHk3p03doEoIZrqJbuT59HUsP8IW.png",
                 "/petroenergia-logo.jpeg",
@@ -1552,9 +1557,9 @@ export default function Home() {
           </div>
         </section>
         {/* Footer */}
-        <footer className="bg-slate-900 text-white py-16">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <footer className="bg-slate-900 text-white py-12 sm:py-16">
+          <div className="container mx-auto px-2 sm:px-4">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
               {/* Logo y descripción */}
               <div className="lg:col-span-1">
                 <div className="flex items-center gap-3 mb-4">
