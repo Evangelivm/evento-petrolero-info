@@ -923,8 +923,8 @@ export default function Home() {
         </section> */}
 
         {/* Patrocinadores */}
-        {/* <section id="patrocinadores" className="py-16">
-          <div className="container">
+        <section id="patrocinadores" className="py-16">
+          <div className="container mx-auto px-2 sm:px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">
                 Patrocinadores del Evento
@@ -938,29 +938,27 @@ export default function Home() {
               <div>
                 <h3 className="text-center text-xl font-semibold mb-6 text-amber-600">
                   Crudos Superligeros (54 API)
-                </h3> */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center">
-                  {[
-                    "/gotaamarilla.jpg",
-                    "/gotaamarilla.jpg",
-                    "/gotaamarilla.jpg",
-                  ].map((logo, index) => (
-                    <div
-                      key={index}
-                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
-                    >
-                      <Image
-                        src={logo || "/placeholder.svg"}
-                        alt={`Crudos Superligeros ${index + 1}`}
-                        width={280}
-                        height={140}
-                        className={`w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300`}
-                      />
-                    </div>
-                  ))}
-                </div> */}
-        {/* Agregar segunda fila con 3 recuadros adicionales */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center">
+                  {["andes.jpg", "gtg.jpg", "/gotaamarilla.jpg"].map(
+                    (logo, index) => (
+                      <div
+                        key={index}
+                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
+                      >
+                        <Image
+                          src={logo || "/placeholder.svg"}
+                          alt={`Crudos Superligeros ${index + 1}`}
+                          width={280}
+                          height={140}
+                          className={`w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300`}
+                        />
+                      </div>
+                    )
+                  )}
+                </div>
+                {/* Agregar segunda fila con 3 recuadros adicionales */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
                   {[
                     "/gotaamarilla.jpg",
                     "/gotaamarilla.jpg",
@@ -986,13 +984,13 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-              </div> */}
+              </div>
 
-        {/* <div>
+              <div>
                 <h3 className="text-center text-xl font-semibold mb-6 text-amber-800">
                   Crudos Ligeros (42 API)
-                </h3> */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-center justify-items-center">
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-center justify-items-center">
                   {[
                     "/gotaamarron.jpg",
                     "/gotaamarron.jpg",
@@ -1015,9 +1013,9 @@ export default function Home() {
                       />
                     </div>
                   ))}
-                </div> */}
-        {/* Segunda fila de patrocinadores Crudos Ligeros */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-center justify-items-center mt-6">
+                </div>
+                {/* Segunda fila de patrocinadores Crudos Ligeros */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-center justify-items-center mt-6">
                   {[
                     "/gotaamarron.jpg",
                     "/gotaamarron.jpg",
@@ -1040,14 +1038,14 @@ export default function Home() {
                       />
                     </div>
                   ))}
-                </div> */}
-        {/* </div> */}
+                </div>
+              </div>
 
-        {/* <div> */}
-        {/* <h3 className="text-center text-xl font-semibold mb-6 text-black">
+              <div>
+                <h3 className="text-center text-xl font-semibold mb-6 text-black">
                   Crudos Pesados (22 API)
-                </h3> */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center">
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center">
                   {[
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/centro1.jpg-nWF1NgHSV4sLjZnoxcj32yLrYtmpaB.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/north.jpg-S6NiYQ1WtmhOY6exa5GwWaQn01wQEy.jpeg",
@@ -1135,9 +1133,9 @@ export default function Home() {
                       </div>
                     )
                   )}
-                </div> */}
-        {/* Segunda fila de patrocinadores Crudos Pesados */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center mt-6">
+                </div>
+                {/* Segunda fila de patrocinadores Crudos Pesados */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center mt-6">
                   {[
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gotanegra.jpg-ZziapayHpXt4TaT5DuEXnbkQW08tRQ.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gotanegra.jpg-ZziapayHpXt4TaT5DuEXnbkQW08tRQ.jpeg",
@@ -1156,8 +1154,8 @@ export default function Home() {
                       />
                     </div>
                   ))}
-                </div> */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center mt-6">
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center mt-6">
                   {[
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gotanegra.jpg-ZziapayHpXt4TaT5DuEXnbkQW08tRQ.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gotanegra.jpg-ZziapayHpXt4TaT5DuEXnbkQW08tRQ.jpeg",
@@ -1176,11 +1174,11 @@ export default function Home() {
                       />
                     </div>
                   ))}
-                </div> */}
-        {/* </div>
+                </div>
+              </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* Auspiciadores del Evento */}
         <section id="auspiciadores" className="py-12 sm:py-16 bg-slate-50">
@@ -1421,6 +1419,8 @@ export default function Home() {
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%209.32.59%20PM-kal8xWcZUnE8fmaCBEDYdDSXHoxFNB.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%209.33.00%20PM-cwUZi3Adr1RGm9KmewxWbcN6srj3R1.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder.svg",
+                    "blcorredores.jpg",
+                    "tdm.jpg",
                   ].map((logo, index) => (
                     <div
                       key={index + 12}
@@ -1477,7 +1477,7 @@ export default function Home() {
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%203.44.06%20PM-AQ3rFqKgZ2l8MuwNldkQDNf2jCEw2B.jpeg",
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%203.44.29%20PM-JozEHMGEy4IgZBuZYaQSbejb8Jfajk.jpeg",
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ammpuni1.jpg-L2sH5D39nrY8AptAMkvR5bdW1t4jJE.jpeg",
-                "/placeholder.svg",
+                "/cntv.jpg",
                 "/placeholder.svg",
                 "/placeholder.svg",
               ].map((logo, index) => (
