@@ -498,6 +498,15 @@ export default function Home() {
                   isSpecial: false,
                   country: "Colombia",
                 },
+                {
+                  name: "Carlos Gonzales Ávila",
+                  role: "Director General, Enerconsult SA",
+                  image: "gonzalesavila.jpg",
+                  topic:
+                    "El Rol de Perupetro, El Ejecutivo y el Legislativo en la reactivación petrolera de la región Piura",
+                  isSpecial: false,
+                  country: "Perú",
+                },
               ].map((speaker, index) => (
                 <Card
                   key={index}
@@ -992,8 +1001,8 @@ export default function Home() {
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-center justify-items-center">
                   {[
-                    "/gotaamarron.jpg",
-                    "/gotaamarron.jpg",
+                    "estrellapetrolera.png",
+                    "rodatech.png",
                     "/gotaamarron.jpg",
                     "/gotaamarron.jpg",
                   ].map((logo, index) => (
@@ -1135,7 +1144,7 @@ export default function Home() {
                   )}
                 </div>
                 {/* Segunda fila de patrocinadores Crudos Pesados */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center mt-6">
+                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center mt-6">
                   {[
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gotanegra.jpg-ZziapayHpXt4TaT5DuEXnbkQW08tRQ.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gotanegra.jpg-ZziapayHpXt4TaT5DuEXnbkQW08tRQ.jpeg",
@@ -1154,8 +1163,8 @@ export default function Home() {
                       />
                     </div>
                   ))}
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center mt-6">
+                </div> */}
+                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center mt-6">
                   {[
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gotanegra.jpg-ZziapayHpXt4TaT5DuEXnbkQW08tRQ.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gotanegra.jpg-ZziapayHpXt4TaT5DuEXnbkQW08tRQ.jpeg",
@@ -1174,7 +1183,7 @@ export default function Home() {
                       />
                     </div>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
