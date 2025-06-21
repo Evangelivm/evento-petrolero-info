@@ -318,7 +318,7 @@ export default function Home() {
                     size="lg"
                     className="bg-amber-600 hover:bg-amber-700 w-full sm:w-auto text-base"
                   >
-                    <a href="https://evento.reactivetroltalara.online/">
+                    <a href="https://evento.reactivapetroltalara.online/">
                       Inscríbete Ahora
                     </a>
                   </Button>
@@ -336,7 +336,7 @@ export default function Home() {
               <div className="flex justify-center lg:justify-center mt-8 lg:mt-0">
                 <div className="max-w-xs sm:max-w-md md:max-w-lg w-full">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-12%20at%202.41.26%20PM-5eU2TQjOkMmciuzyRDsZTizpPtWHpG.jpeg"
+                    src="flyer.jpg"
                     alt="Congreso Internacional Reactivación Petrolera en la Región Piura - 12 al 14 Agosto 2025 - Hotel Pacifico Talara"
                     width={600}
                     height={450}
@@ -1430,6 +1430,7 @@ export default function Home() {
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder.svg",
                     "blcorredores.jpg",
                     "tdm.jpg",
+                    "murgisa.jpg",
                   ].map((logo, index) => (
                     <div
                       key={index + 12}
@@ -1460,6 +1461,41 @@ export default function Home() {
                       />
                     </div>
                   ))}
+                </div>
+                {/* Agregar cuarta fila con 3 recuadros adicionales */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["huascaran.jpg", "vallenorte.jpg", "sevi.jpg"].map(
+                    (logo, index) => (
+                      <div
+                        key={index + 12}
+                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
+                      >
+                        <Image
+                          src={
+                            index === 2
+                              ? "/sevi.jpg"
+                              : logo || "/placeholder.svg"
+                          }
+                          width={280}
+                          height={140}
+                          alt={
+                            index === 0
+                              ? "ProActive"
+                              : index === 1
+                              ? "Industrial Vox Analyzer"
+                              : index === 2
+                              ? "TRANSBER - Soluciones Logísticas Integradas"
+                              : `Auspiciador Crudos Superligeros ${index + 13}`
+                          }
+                          className={
+                            index === 2
+                              ? "w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                              : "w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                          }
+                        />
+                      </div>
+                    )
+                  )}
                 </div>
               </div>
             </div>
