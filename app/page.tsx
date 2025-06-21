@@ -948,23 +948,21 @@ export default function Home() {
                 <h3 className="text-center text-xl font-semibold mb-6 text-amber-600">
                   Crudos Superligeros (54 API)
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center">
-                  {["andes.jpg", "gtg.jpg", "/gotaamarilla.jpg"].map(
-                    (logo, index) => (
-                      <div
-                        key={index}
-                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
-                      >
-                        <Image
-                          src={logo || "/placeholder.svg"}
-                          alt={`Crudos Superligeros ${index + 1}`}
-                          width={280}
-                          height={140}
-                          className={`w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300`}
-                        />
-                      </div>
-                    )
-                  )}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 items-center justify-items-center">
+                  {["andesflyer.jpg", "gtgflyer.jpg"].map((logo, index) => (
+                    <div
+                      key={index}
+                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
+                    >
+                      <Image
+                        src={logo || "/placeholder.svg"}
+                        alt={`Crudos Superligeros ${index + 1}`}
+                        width={480}
+                        height={140}
+                        className="object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
                 </div>
                 {/* Agregar segunda fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
