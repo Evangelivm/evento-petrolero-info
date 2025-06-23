@@ -507,6 +507,15 @@ export default function Home() {
                   isSpecial: false,
                   country: "Perú",
                 },
+                {
+                  name: "Dr.Eduardo Guevara Doods",
+                  role: "Abogado, Socio de CMS Grau y ex Vice Ministro de Hidrocarburos",
+                  image: "guevaradoods.jpg",
+                  topic:
+                    "Manejo Regulatorio para los Pasivos Ambientales en la Cuenca de Talara",
+                  isSpecial: false,
+                  country: "Perú",
+                },
               ].map((speaker, index) => (
                 <Card
                   key={index}
