@@ -1208,7 +1208,7 @@ export default function Home() {
                   {[
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250408-WA0007%281%29.jpg-t8Wc7ROtgD5fcJP2Db3KLP9gjN7Yyq.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LOGO%20GENERAL%20FULL%20HD%202-tc4PaWuIg1gA5Bwq4GzqS3lSab3ak7.png",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20CWP%20-%20JPG.jpg-VVUnskOWnnWJSU3hJ1pBzhtN5DJPOw.jpeg",
+                    "sevi.jpg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250408-WA0006.jpg-krzkasnnukbIbejtjJlgGI8YJ5Xn31.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo.PRECO-XePWApXtkKimWB9GU2NjijhkkWIqFZ.png",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20Nexell-01-01-xUwLzwPQjDH0FkHahEvighI4cybpjl.png",
@@ -1462,18 +1462,14 @@ export default function Home() {
                 </div>
                 {/* Agregar cuarta fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["huascaran.jpg", "vallenorte.jpg", "sevi.jpg"].map(
+                  {["huascaran.jpg", "vallenorte.jpg", "cwp_welcome.jpg"].map(
                     (logo, index) => (
                       <div
                         key={index + 12}
-                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
+                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
                       >
                         <Image
-                          src={
-                            index === 2
-                              ? "/sevi.jpg"
-                              : logo || "/placeholder.svg"
-                          }
+                          src={logo || "/placeholder.svg"}
                           width={280}
                           height={140}
                           alt={
@@ -1481,15 +1477,9 @@ export default function Home() {
                               ? "ProActive"
                               : index === 1
                               ? "Industrial Vox Analyzer"
-                              : index === 2
-                              ? "TRANSBER - Soluciones Logísticas Integradas"
-                              : `Auspiciador Crudos Superligeros ${index + 13}`
+                              : "TRANSBER - Soluciones Logísticas Integradas"
                           }
-                          className={
-                            index === 2
-                              ? "w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
-                              : "w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                          }
+                          className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                         />
                       </div>
                     )
