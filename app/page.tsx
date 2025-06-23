@@ -1474,7 +1474,7 @@ export default function Home() {
                           height={140}
                           alt={
                             index === 0
-                              ? "ProActivee"
+                              ? "ProActive"
                               : index === 1
                               ? "Industrial Vox Analyzer"
                               : "TRANSBER - Soluciones Logísticas Integradas"
@@ -1488,6 +1488,54 @@ export default function Home() {
                 {/* Agregar quinta fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
                   {["igl.jpg", "ksa.jpg", "serfamed.jpg"].map((logo, index) => (
+                    <div
+                      key={index + 12}
+                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
+                    >
+                      <Image
+                        src={logo}
+                        width={280}
+                        height={140}
+                        alt={
+                          index === 0
+                            ? "ProActive"
+                            : index === 1
+                            ? "Industrial Vox Analyzer"
+                            : "TRANSBER - Soluciones Logísticas Integradas"
+                        }
+                        className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+                {/* Agregar sexta fila con 3 recuadros adicionales */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["transber.jpg", "towers.jpg", "bucanero.jpg"].map(
+                    (logo, index) => (
+                      <div
+                        key={index + 12}
+                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
+                      >
+                        <Image
+                          src={logo}
+                          width={280}
+                          height={140}
+                          alt={
+                            index === 0
+                              ? "ProActive"
+                              : index === 1
+                              ? "Industrial Vox Analyzer"
+                              : "TRANSBER - Soluciones Logísticas Integradas"
+                          }
+                          className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                        />
+                      </div>
+                    )
+                  )}
+                </div>
+                {/* Agregar septima fila con 3 recuadros adicionales */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["zaco.jpg"].map((logo, index) => (
                     <div
                       key={index + 12}
                       className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
@@ -1534,13 +1582,13 @@ export default function Home() {
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%203.44.29%20PM-JozEHMGEy4IgZBuZYaQSbejb8Jfajk.jpeg",
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ammpuni1.jpg-L2sH5D39nrY8AptAMkvR5bdW1t4jJE.jpeg",
                 "/cntv.jpg",
-                "/placeholder.svg",
-                "/placeholder.svg",
+                "/colegio_ing.jpg",
               ].map((logo, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg border-2 border-gray-300 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[200px] aspect-[3/1.5] flex items-center justify-items-center overflow-hidden group"
+                  className="bg-white rounded-lg border-2 border-gray-300 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[240px] flex items-center justify-center overflow-hidden group"
                 >
+                  {/* Condicionales para enlaces personalizados */}
                   {index === 0 ? (
                     <Link
                       href="https://www.facebook.com/tierraadentrope/"
@@ -1551,9 +1599,9 @@ export default function Home() {
                       <Image
                         src={logo || "/placeholder.svg"}
                         alt="Tierra Adentro"
-                        width={200}
-                        height={100}
-                        className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-300"
+                        width={240}
+                        height={120}
+                        className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.05] transition-transform duration-300"
                       />
                     </Link>
                   ) : index === 1 ? (
@@ -1566,18 +1614,18 @@ export default function Home() {
                       <Image
                         src={logo || "/placeholder.svg"}
                         alt="Petroenergía"
-                        width={200}
-                        height={100}
-                        className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                        width={240}
+                        height={120}
+                        className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                       />
                     </Link>
                   ) : index === 6 ? (
                     <Image
                       src={logo || "/placeholder.svg"}
                       alt="ALPAVIRA Revista"
-                      width={200}
-                      height={100}
-                      className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                      width={240}
+                      height={120}
+                      className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                     />
                   ) : index === 7 ? (
                     <Link
@@ -1589,9 +1637,9 @@ export default function Home() {
                       <Image
                         src={logo || "/placeholder.svg"}
                         alt={`Media Partner ${index + 1}`}
-                        width={200}
-                        height={100}
-                        className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                        width={240}
+                        height={120}
+                        className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                       />
                     </Link>
                   ) : (
@@ -1602,9 +1650,9 @@ export default function Home() {
                           ? "AMPP UNI Student Section - Universidad Nacional de Ingeniería"
                           : `Media Partner ${index + 1}`
                       }
-                      width={200}
-                      height={100}
-                      className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                      width={240}
+                      height={120}
+                      className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                     />
                   )}
                 </div>
