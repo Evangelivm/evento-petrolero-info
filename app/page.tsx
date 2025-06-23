@@ -1474,7 +1474,7 @@ export default function Home() {
                           height={140}
                           alt={
                             index === 0
-                              ? "ProActive"
+                              ? "ProActivee"
                               : index === 1
                               ? "Industrial Vox Analyzer"
                               : "TRANSBER - Soluciones Logísticas Integradas"
