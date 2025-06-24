@@ -1424,7 +1424,7 @@ export default function Home() {
                 {/* Cuarta fila */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
                   {[
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%209.32.59%20PM-kal8xWcZUnE8fmaCBEDYdDSXHoxFNB.jpeg",
+                    "proactive.jpg",
                     "industrial.jpg",
                     "blcorredores.jpg",
                     "tdm.jpg",
@@ -1570,7 +1570,6 @@ export default function Home() {
                 "northoil.jpg",
                 "centroinvest.jpg",
                 "spe.jpg",
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%2012.36.43%20PM-50hIm7dGucfbJfuj5296y6iPVGcYd2.jpeg",
                 "allpawara.jpg",
                 "energiaandina.jpg",
                 "amppuni.jpg",
