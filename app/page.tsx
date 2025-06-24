@@ -1655,7 +1655,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="bg-slate-900 text-white py-12 sm:py-16">
           <div className="container mx-auto px-2 sm:px-4">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {/* Logo y descripción */}
               <div className="lg:col-span-1">
                 <div className="flex items-center gap-3 mb-4">
@@ -1744,7 +1744,7 @@ export default function Home() {
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-gray-300 text-sm">945709570</span>
+                    <span className="text-gray-300 text-sm">933685901</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-gray-300 text-sm">
@@ -1755,7 +1755,7 @@ export default function Home() {
               </div>
 
               {/* Suscripción */}
-              <div>
+              {/* <div>
                 <h3 className="text-lg font-semibold mb-4">Suscríbete</h3>
                 <p className="text-gray-300 text-sm mb-4">
                   Recibe actualizaciones sobre el evento y la industria
@@ -1771,7 +1771,7 @@ export default function Home() {
                     Enviar
                   </Button>
                 </form>
-              </div>
+              </div> */}
             </div>
 
             {/* Copyright */}
