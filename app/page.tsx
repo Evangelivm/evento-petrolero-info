@@ -1006,29 +1006,26 @@ export default function Home() {
                 <h3 className="text-center text-xl font-semibold mb-6 text-amber-800">
                   Crudos Ligeros (42 API)
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-center justify-items-center">
-                  {[
-                    "estrellapetrolera.png",
-                    "rodatech.png",
-                    "/gotaamarron.jpg",
-                    "/gotaamarron.jpg",
-                  ].map((logo, index) => (
-                    <div
-                      key={index}
-                      className="bg-white p-3 rounded-lg border-2 border-amber-800 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[220px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
-                    >
-                      <Image
-                        src={logo || "/placeholder.svg"}
-                        alt={`Crudos Ligeros ${index + 1}`}
-                        width={220}
-                        height={110}
-                        className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                        onError={(e) => {
-                          e.currentTarget.src = "/placeholder.svg";
-                        }}
-                      />
-                    </div>
-                  ))}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 items-center justify-items-center">
+                  {["estrellapetrolera.jpg", "rodatech.jpg"].map(
+                    (logo, index) => (
+                      <div
+                        key={index}
+                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
+                      >
+                        <Image
+                          src={logo || "/placeholder.svg"}
+                          alt={`Crudos Ligeros ${index + 1}`}
+                          width={480}
+                          height={140}
+                          className="object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                          onError={(e) => {
+                            e.currentTarget.src = "/placeholder.svg";
+                          }}
+                        />
+                      </div>
+                    )
+                  )}
                 </div>
                 {/* Segunda fila de patrocinadores Crudos Ligeros */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-center justify-items-center mt-6">
@@ -1215,19 +1212,19 @@ export default function Home() {
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center">
                   {[
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250408-WA0007%281%29.jpg-t8Wc7ROtgD5fcJP2Db3KLP9gjN7Yyq.jpeg",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LOGO%20GENERAL%20FULL%20HD%202-tc4PaWuIg1gA5Bwq4GzqS3lSab3ak7.png",
-                    "sevi.jpg",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250408-WA0006.jpg-krzkasnnukbIbejtjJlgGI8YJ5Xn31.jpeg",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo.PRECO-XePWApXtkKimWB9GU2NjijhkkWIqFZ.png",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20Nexell-01-01-xUwLzwPQjDH0FkHahEvighI4cybpjl.png",
+                    "pandaenergy.jpg",
+                    "axure.jpg",
+                    "se&vi.jpg",
+                    "alpha.jpg",
+                    "preco.jpg",
+                    "nexell.jpg",
                   ].map((logo, index) => (
                     <div
                       key={index}
                       className={
                         index === 0
-                          ? "bg-black rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
-                          : "bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
+                          ? "bg-black rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
+                          : "bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
                       }
                     >
                       {index === 0 ? (
@@ -1242,7 +1239,7 @@ export default function Home() {
                             alt="Panda Energy"
                             width={280}
                             height={140}
-                            className={`w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300`}
+                            className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                           />
                         </Link>
                       ) : index === 1 ? (
@@ -1257,7 +1254,7 @@ export default function Home() {
                             alt="Axure Technologies"
                             width={280}
                             height={140}
-                            className={`w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300`}
+                            className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                           />
                         </Link>
                       ) : index === 2 ? (
@@ -1272,7 +1269,7 @@ export default function Home() {
                             alt="Climber World Peru SAC"
                             width={280}
                             height={140}
-                            className={`w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300`}
+                            className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                           />
                         </Link>
                       ) : index === 4 ? (
@@ -1287,7 +1284,7 @@ export default function Home() {
                             alt="PRECO"
                             width={280}
                             height={140}
-                            className={`w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300`}
+                            className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                           />
                         </Link>
                       ) : index === 5 ? (
@@ -1302,7 +1299,7 @@ export default function Home() {
                             alt="Nexell Corporation"
                             width={280}
                             height={140}
-                            className={`w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300`}
+                            className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                           />
                         </Link>
                       ) : (
@@ -1311,144 +1308,135 @@ export default function Home() {
                           alt="Ipha Integral Service"
                           width={280}
                           height={140}
-                          className={`w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300`}
+                          className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                         />
                       )}
                     </div>
                   ))}
                 </div>
-                {/* Agregar segunda fila con 3 recuadros adicionales */}
+
+                {/* Segunda fila */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {[
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250309-WA0041.jpg-qPZRw500wGxhxwkxlvWbhiiIHoAhSU.jpeg",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/go-EM7SpR01m2GAU4nJnY4trm6Ge3eGZX.png",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LOGO%20VC%20ULTIMO%20%281%29-9zWiwipNtWHJUP3wAeoxYrgtX0PlCv.png",
-                  ].map((logo, index) => (
-                    <div
-                      key={index + 6}
-                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
-                    >
-                      {index === 1 ? (
-                        <Link
-                          href="https://holisticgoinversiones.com/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-full h-full flex items-center justify-center"
-                        >
+                  {["statusipg.jpg", "holisticgo.jpg", "viceversa.jpg"].map(
+                    (logo, index) => (
+                      <div
+                        key={index + 6}
+                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
+                      >
+                        {index === 1 ? (
+                          <Link
+                            href="https://holisticgoinversiones.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full h-full flex items-center justify-center"
+                          >
+                            <Image
+                              src={logo || "/placeholder.svg"}
+                              alt="Holistic Go"
+                              width={280}
+                              height={140}
+                              className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                            />
+                          </Link>
+                        ) : index === 2 ? (
+                          <Link
+                            href="https://www.viceversaconsulting.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full h-full flex items-center justify-center"
+                          >
+                            <Image
+                              src={logo || "/placeholder.svg"}
+                              alt="Vice Versa Consulting"
+                              width={280}
+                              height={140}
+                              className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                            />
+                          </Link>
+                        ) : (
                           <Image
                             src={logo || "/placeholder.svg"}
-                            alt="Holistic Go"
+                            alt="Status International Petroleum Group"
                             width={280}
                             height={140}
-                            className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                            className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                           />
-                        </Link>
-                      ) : index === 2 ? (
-                        <Link
-                          href="https://www.viceversaconsulting.com/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-full h-full flex items-center justify-center"
-                        >
-                          <Image
-                            src={logo || "/placeholder.svg"}
-                            alt="Vice Versa Consulting"
-                            width={280}
-                            height={140}
-                            className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                          />
-                        </Link>
-                      ) : (
-                        <Image
-                          src={logo || "/placeholder.svg"}
-                          alt="Status International Petroleum Group"
-                          width={280}
-                          height={140}
-                          className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                        />
-                      )}
-                    </div>
-                  ))}
+                        )}
+                      </div>
+                    )
+                  )}
                 </div>
-                {/* Agregar tercera fila con 3 recuadros adicionales */}
+
+                {/* Tercera fila */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {[
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%2010.09.48%20AM-MwJzkFWJZkghvGG20Tep7uyteMZf7d.jpeg",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%203.45.16%20PM-MKlWGnArxQC50YkjOPOGBIMC9aK7et.jpeg",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder.svg",
-                  ].map((logo, index) => (
-                    <div
-                      key={index + 9}
-                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
-                    >
-                      {index === 0 ? (
-                        <Link
-                          href="https://clinicasanjuancorp.com/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-full h-full flex items-center justify-center"
-                        >
+                  {["clinicasanjuan.jpg", "ivey.jpg", "sce.jpg"].map(
+                    (logo, index) => (
+                      <div
+                        key={index + 9}
+                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
+                      >
+                        {index === 0 ? (
+                          <Link
+                            href="https://clinicasanjuancorp.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full h-full flex items-center justify-center"
+                          >
+                            <Image
+                              src={logo || "/placeholder.svg"}
+                              width={280}
+                              height={140}
+                              alt="Clínica San Juan"
+                              className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                            />
+                          </Link>
+                        ) : index === 2 ? (
+                          <Link
+                            href="https://www.socorrocargoexpress.sce-peru.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full h-full flex items-center justify-center"
+                          >
+                            <Image
+                              src={logo || "/placeholder.svg"}
+                              alt="Socorro Cargo Express"
+                              width={280}
+                              height={140}
+                              className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                            />
+                          </Link>
+                        ) : (
                           <Image
                             src={logo || "/placeholder.svg"}
                             width={280}
                             height={140}
-                            alt="Clínica San Juan"
-                            className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                            alt={
+                              index === 1 ? "IVEY" : `Auspiciador ${index + 1}`
+                            }
+                            className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                           />
-                        </Link>
-                      ) : index === 2 ? (
-                        <Link
-                          href="https://www.socorrocargoexpress.sce-peru.com/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-full h-full flex items-center justify-center"
-                        >
-                          <Image
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sce.jpg-9C5YTypRfF6N4mbKMRxg91AlHOu0jW.jpeg"
-                            alt="Description of image"
-                            width={280}
-                            height={140}
-                            className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                          />
-                        </Link>
-                      ) : (
-                        <Image
-                          src={
-                            index === 1
-                              ? logo || "/placeholder.svg"
-                              : logo || "/placeholder.svg"
-                          }
-                          width={280}
-                          height={140}
-                          alt={
-                            index === 1 ? "IVEY" : `Auspiciador ${index + 1}`
-                          }
-                          className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                        />
-                      )}
-                    </div>
-                  ))}
+                        )}
+                      </div>
+                    )
+                  )}
                 </div>
-                {/* Agregar cuarta fila con 3 recuadros adicionales */}
+
+                {/* Cuarta fila */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
                   {[
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%209.32.59%20PM-kal8xWcZUnE8fmaCBEDYdDSXHoxFNB.jpeg",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%209.33.00%20PM-cwUZi3Adr1RGm9KmewxWbcN6srj3R1.jpeg",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder.svg",
+                    "industrial.jpg",
                     "blcorredores.jpg",
                     "tdm.jpg",
                     "murgisa.jpg",
+                    "zaco.jpg",
                   ].map((logo, index) => (
                     <div
                       key={index + 12}
-                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
+                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
                     >
                       <Image
-                        src={
-                          index === 2
-                            ? "/transber-logo.jpg"
-                            : logo || "/placeholder.svg"
-                        }
+                        src={logo || "/placeholder.svg"}
                         width={280}
                         height={140}
                         alt={
@@ -1460,11 +1448,7 @@ export default function Home() {
                             ? "TRANSBER - Soluciones Logísticas Integradas"
                             : `Auspiciador Crudos Superligeros ${index + 13}`
                         }
-                        className={
-                          index === 2
-                            ? "w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
-                            : "w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                        }
+                        className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                       />
                     </div>
                   ))}
@@ -1543,7 +1527,7 @@ export default function Home() {
                   )}
                 </div>
                 {/* Agregar septima fila con 3 recuadros adicionales */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
+                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
                   {["zaco.jpg"].map((logo, index) => (
                     <div
                       key={index + 12}
@@ -1564,7 +1548,7 @@ export default function Home() {
                       />
                     </div>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -1581,21 +1565,21 @@ export default function Home() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center">
               {[
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LOGO%20TIERRA%20ADENTRO%20HORIZONAL%20EN%20ALTAS-3tCHk3p03doEoIZrqJbuT59HUsP8IW.png",
-                "/petroenergia-logo.jpeg",
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/north.jpg-DtCqBv5dO0sYIfDOI0vQ5bNkUJZ6lO.jpeg",
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/centro1.jpg-LwRRBpSiOzxEw8gqW0yqH1dV27m2vC.jpeg",
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SPE%20UNP%20PIURA-2tbSB7wMNFUFI8c1VoGyTQnrKVkJNC.png",
+                "tierraadentro.jpg",
+                "petroenergia.jpg",
+                "northoil.jpg",
+                "centroinvest.jpg",
+                "spe.jpg",
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%2012.36.43%20PM-50hIm7dGucfbJfuj5296y6iPVGcYd2.jpeg",
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%203.44.06%20PM-AQ3rFqKgZ2l8MuwNldkQDNf2jCEw2B.jpeg",
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-26%20at%203.44.29%20PM-JozEHMGEy4IgZBuZYaQSbejb8Jfajk.jpeg",
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ammpuni1.jpg-L2sH5D39nrY8AptAMkvR5bdW1t4jJE.jpeg",
+                "allpawara.jpg",
+                "energiaandina.jpg",
+                "amppuni.jpg",
                 "/cntv.jpg",
                 "/colegio_ing.jpg",
               ].map((logo, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg border-2 border-gray-300 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[240px] flex items-center justify-center overflow-hidden group"
+                  className="bg-white rounded-lg border-2 border-gray-300 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[340px] flex items-center justify-center overflow-hidden group"
                 >
                   {/* Condicionales para enlaces personalizados */}
                   {index === 0 ? (
@@ -1608,7 +1592,7 @@ export default function Home() {
                       <Image
                         src={logo || "/placeholder.svg"}
                         alt="Tierra Adentro"
-                        width={240}
+                        width={340}
                         height={120}
                         className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.05] transition-transform duration-300"
                       />
