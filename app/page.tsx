@@ -336,7 +336,7 @@ export default function Home() {
               <div className="flex justify-center lg:justify-center mt-8 lg:mt-0">
                 <div className="max-w-xs sm:max-w-md md:max-w-lg w-full">
                   <Image
-                    src="flyer.jpg"
+                    src="flyer.webp"
                     alt="Congreso Internacional Reactivación Petrolera en la Región Piura - 12 al 14 Agosto 2025 - Hotel Pacifico Talara"
                     width={600}
                     height={450}
@@ -1168,26 +1168,6 @@ export default function Home() {
                     </div>
                   ))}
                 </div> */}
-                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 items-center justify-items-center mt-6">
-                  {[
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gotanegra.jpg-ZziapayHpXt4TaT5DuEXnbkQW08tRQ.jpeg",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gotanegra.jpg-ZziapayHpXt4TaT5DuEXnbkQW08tRQ.jpeg",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gotanegra.jpg-ZziapayHpXt4TaT5DuEXnbkQW08tRQ.jpeg",
-                  ].map((logo, index) => (
-                    <div
-                      key={index + 6}
-                      className="bg-white rounded-lg border-2 border-black shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[200px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
-                    >
-                      <Image
-                        src="/gotanegra.jpg"
-                        width={200}
-                        height={100}
-                        alt={`Crudos Pesados - Patrocinador ${index + 7}`}
-                        className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                      />
-                    </div>
-                  ))}
-                </div> */}
               </div>
             </div>
           </div>
@@ -1553,6 +1533,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         {/* Media Partners */}
         <section id="media-partners" className="py-12 sm:py-16">
           <div className="container mx-auto px-2 sm:px-4">
@@ -1575,6 +1556,7 @@ export default function Home() {
                 "amppuni.jpg",
                 "/cntv.jpg",
                 "/colegio_ing.jpg",
+                "institutoperuanoing.jpg",
               ].map((logo, index) => (
                 <div
                   key={index}
@@ -1652,6 +1634,47 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Operaciones Offshore en Marcha */}
+        <section id="offshore" className="py-12 sm:py-16 bg-slate-50">
+          <div className="container mx-auto px-2 sm:px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4 text-amber-700">
+                Operaciones Offshore en Marcha
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Descubre cómo se desarrollan las operaciones offshore en la
+                región Piura y su impacto en la industria petrolera nacional.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <div className="bg-white rounded-xl shadow-lg border-2 border-amber-500 p-4 max-w-[380px] w-full flex flex-col items-center">
+                {/* Marco para video vertical */}
+                <div className="relative w-[270px] h-[480px] rounded-lg overflow-hidden bg-black flex items-center justify-center">
+                  {/* Reemplaza el src por el enlace de tu video vertical (por ejemplo, de YouTube, Vimeo, etc.) */}
+                  <iframe
+                    src="op_offshore.webm"
+                    title="Operaciones Offshore en Marcha"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                  />
+                  {/* Si no hay video disponible, puedes mostrar una imagen de placeholder */}
+                  {/* <Image
+                    src="/offshore-placeholder.jpg"
+                    alt="Video Operaciones Offshore"
+                    fill
+                    className="object-cover"
+                  /> */}
+                </div>
+                <span className="mt-4 text-sm text-gray-500">
+                  Video vertical | 9:16
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Footer */}
         <footer className="bg-slate-900 text-white py-12 sm:py-16">
           <div className="container mx-auto px-2 sm:px-4">
