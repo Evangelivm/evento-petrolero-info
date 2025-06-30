@@ -361,7 +361,7 @@ export default function Home() {
                 <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
                   Congreso Internacional:{" "}
                   <span className="text-amber-500">Reactivación Petrolera</span>{" "}
-                  en la Región Piura
+                  en las Regiones Piura y Tumbes
                 </h1>
                 <p className="text-xl text-gray-300">
                   Impulsando las Operaciones Offshore y OnShore en Cuencas
@@ -766,7 +766,7 @@ export default function Home() {
                       title: "Panel de comentarios",
                       panelists: [
                         "Manuel Farias, Director de Perforacion CAPPETROL",
-                        "Tomas Diaz, Gerente de Exploracion y Produccion, Petroperu SA",
+                        "Tomas Diaz, Gerente de Exploracion y Produccion, PETROPERU SA",
                         "Oscar Ferney, Director General, ACIPET",
                         "Segismundo Cruces, Gobernador Regional, Tumbes",
                       ],
