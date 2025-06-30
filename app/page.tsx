@@ -485,6 +485,43 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Beneficios de tu Entrada */}
+        <section id="beneficios" className="py-12 sm:py-16">
+          <div className="container mx-auto px-2 sm:px-4">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold mb-4 text-amber-700">
+                Beneficios de tu Entrada
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Todo lo que recibirás al participar en ReactivaPetrol 2025.
+              </p>
+            </div>
+            <div className="max-w-2xl mx-auto">
+              <ul className="grid gap-4 sm:grid-cols-2">
+                {[
+                  "Certificado de Participación",
+                  "Credenciales y Folletos",
+                  "Almuerzo Corporativo",
+                  "2 Coffee Break",
+                  "Networking",
+                  "Acceso a la Zona VIP",
+                  "Cocktail y Fiesta de Cierre",
+                  "Acceso a los videos del evento desde la plataforma Online",
+                  "Membresía Anual (solo por pago de 3 días)",
+                ].map((item, idx) => (
+                  <li
+                    key={idx}
+                    className="flex items-start gap-3 bg-amber-50 rounded-lg px-4 py-3 border border-amber-100"
+                  >
+                    <CheckCircle className="h-5 w-5 text-amber-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-base text-gray-800">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* Ponentes Destacados */}
         <section id="ponentes" className="py-12 sm:py-16">
           <div className="container mx-auto px-2 sm:px-4">
@@ -1258,9 +1295,6 @@ export default function Home() {
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/centro1.jpg-nWF1NgHSV4sLjZnoxcj32yLrYtmpaB.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/north.jpg-S6NiYQ1WtmhOY6exa5GwWaQn01wQEy.jpeg",
                     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-24%20at%2012.11.07%20PM-ChEwWMrmx324rxZLyBWWjmQUBoU897.jpeg",
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LOGO%20TIERRA%20ADENTRO%20HORIZONAL%20EN%20ALTAS-koxBZTLAeJw5Ijc9eNOzcuDOWXWPH0.png",
-                    "/placeholder.svg",
-                    "/placeholder.svg",
                   ].map((logo, index) =>
                     index === 0 ? (
                       <Link
@@ -1843,6 +1877,46 @@ export default function Home() {
                   )}
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+        {/* Operaciones Offshore en Marcha */}
+        <section id="offshore" className="py-12 sm:py-16 bg-slate-50">
+          <div className="container mx-auto px-2 sm:px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4 text-amber-700">
+                Operaciones Offshore en Marcha
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Descubre cómo se desarrollan las operaciones offshore en la
+                región Piura y su impacto en la industria petrolera nacional.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              {/* Contenedor para el primer video */}
+              <div className="bg-white rounded-xl shadow-lg border-2 border-amber-500 p-4 max-w-[380px] w-full flex flex-col items-center mr-6">
+                <div className="relative w-[270px] h-[480px] rounded-lg overflow-hidden bg-black flex items-center justify-center">
+                  <iframe
+                    src="op_offshore.webm"
+                    title="Operaciones Offshore en Marcha"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                  />
+                </div>
+              </div>
+              {/* Contenedor para el segundo video */}
+              <div className="bg-white rounded-xl shadow-lg border-2 border-amber-500 p-4 max-w-[380px] w-full flex flex-col items-center">
+                <div className="relative w-[270px] h-[480px] rounded-lg overflow-hidden bg-black flex items-center justify-center">
+                  <iframe
+                    src="op_offshore_2.webm"
+                    title="Operaciones Offshore en Marcha 2"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
