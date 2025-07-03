@@ -1737,8 +1737,8 @@ export default function Home() {
                   )}
                 </div>
                 {/* Agregar sexta fila con 3 recuadros adicionales */}
-                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["transber.jpg", "bucanero.jpg"].map((logo, index) => (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["guille.webp"].map((logo, index) => (
                     <div
                       key={index + 12}
                       className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
@@ -1758,7 +1758,7 @@ export default function Home() {
                       />
                     </div>
                   ))}
-                </div> */}
+                </div>
                 {/* Agregar septima fila con 3 recuadros adicionales */}
                 {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
                   {["zaco.jpg"].map((logo, index) => (
