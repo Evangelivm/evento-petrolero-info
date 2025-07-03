@@ -1245,7 +1245,7 @@ export default function Home() {
                     (logo, index) => (
                       <div
                         key={index}
-                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
+                        className="bg-white rounded-lg border-2 border-amber-800 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
                       >
                         <Image
                           src={logo || "/placeholder.svg"}
@@ -1786,6 +1786,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         {/* Media Partners */}
         <section id="media-partners" className="py-12 sm:py-16">
           <div className="container mx-auto px-2 sm:px-4">
@@ -1883,6 +1884,41 @@ export default function Home() {
                   )}
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+        {/* Respaldo Gubernamental */}
+        <section
+          id="respaldo-gubernamental"
+          className="py-12 sm:py-16 bg-slate-50"
+        >
+          <div className="container mx-auto px-2 sm:px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4 text-blue-700">
+                Respaldo Gubernamental
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                El evento cuenta con el respaldo de entidades gubernamentales
+                clave del sector energético.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 items-center justify-items-center">
+              {["/gob_reg_tumbes.webp", "/dir_reg_tumbes.webp"].map(
+                (logo, index) => (
+                  <div
+                    key={index}
+                    className="bg-white rounded-lg border-2 border-blue-700 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
+                  >
+                    <Image
+                      src={logo}
+                      alt={`Respaldo Gubernamental ${index + 1}`}
+                      width={480}
+                      height={140}
+                      className="object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                    />
+                  </div>
+                )
+              )}
             </div>
           </div>
         </section>
