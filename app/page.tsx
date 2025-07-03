@@ -679,7 +679,7 @@ export default function Home() {
         </section>
 
         {/* Agenda */}
-        <section id="agenda" className="py-16 bg-slate-50">
+        {/* <section id="agenda" className="py-16 bg-slate-50">
           <div className="container mx-auto px-2 sm:px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Agenda del Evento</h2>
@@ -847,7 +847,7 @@ export default function Home() {
                         )}
 
                         {/* Renderizado especial para el panel */}
-                        {item.title === "Panel de comentarios" && (
+        {/* {item.title === "Panel de comentarios" && (
                           <div className="text-gray-600 text-sm mt-2">
                             <div className="font-semibold mb-1">
                               Panelistas:
@@ -865,9 +865,9 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-              </TabsContent>
+              </TabsContent> */}
 
-              <TabsContent
+        {/* <TabsContent
                 value="dia2"
                 className="border rounded-lg p-6 shadow-sm"
               >
@@ -922,9 +922,9 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-              </TabsContent>
+              </TabsContent> */}
 
-              <TabsContent
+        {/* <TabsContent
                 value="dia3"
                 className="border rounded-lg p-6 shadow-sm"
               >
@@ -979,9 +979,9 @@ export default function Home() {
                   ))}
                 </div>
               </TabsContent>
-            </Tabs>
+            </Tabs> */}
 
-            <div className="flex justify-center mt-10">
+        {/* <div className="flex justify-center mt-10">
               <Button
                 className="bg-amber-600 hover:bg-amber-700 flex items-center justify-center gap-2 mx-auto"
                 onClick={generateProgramPDF}
@@ -1001,7 +1001,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Organiza */}
         <section id="organiza" className="py-12 sm:py-16 bg-slate-50">
@@ -1165,7 +1165,7 @@ export default function Home() {
                   Crudos Superligeros (54 API)
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center">
-                  {["andesflyer.jpg", "gtgflyer.jpg", "/pandaenergy.jpg"].map(
+                  {["andesflyer.webp", "gtgflyer.webp", "pandaenergy.webp"].map(
                     (logo, index) => (
                       <div
                         key={index}
@@ -1183,27 +1183,29 @@ export default function Home() {
                   )}
                 </div>
                 {/* Agregar segunda fila con 3 recuadros adicionales */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["/ivey.jpg", "/axure.jpg"].map((logo, index) => (
-                    <div
-                      key={index + 3}
-                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
-                    >
-                      <Image
-                        src={logo || "/placeholder.svg"}
-                        alt={
-                          index === 0
-                            ? "Status International Petroleum Group"
-                            : index === 1
-                            ? "Holistic Go"
-                            : "Vice Versa Consulting"
-                        }
-                        width={480}
-                        height={140}
-                        className="object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                      />
-                    </div>
-                  ))}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["/ivey.webp", "/axure.webp", "/tema.webp"].map(
+                    (logo, index) => (
+                      <div
+                        key={index + 3}
+                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
+                      >
+                        <Image
+                          src={logo || "/placeholder.svg"}
+                          alt={
+                            index === 0
+                              ? "Status International Petroleum Group"
+                              : index === 1
+                              ? "Holistic Go"
+                              : "Vice Versa Consulting"
+                          }
+                          width={480}
+                          height={140}
+                          className="object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                        />
+                      </div>
+                    )
+                  )}
                 </div>
                 {/* Agregar tercera fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
@@ -1239,7 +1241,7 @@ export default function Home() {
                   Crudos Ligeros (42 API)
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 items-center justify-items-center">
-                  {["estrellapetrolera.jpg", "rodatech.jpg"].map(
+                  {["estrellapetrolera.webp", "rodatech.webp"].map(
                     (logo, index) => (
                       <div
                         key={index}
@@ -1441,12 +1443,12 @@ export default function Home() {
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center">
                   {[
-                    "se&vi.jpg",
-                    "alpha.jpg",
-                    "preco.jpg",
-                    "nexell.jpg",
-                    "towers.jpg",
-                    "transber.jpg",
+                    "se&vi.webp",
+                    "alpha.webp",
+                    "preco.webp",
+                    "nexell.webp",
+                    "towers.webp",
+                    "transber.webp",
                   ].map((logo, index) => (
                     <div
                       key={index}
@@ -1546,7 +1548,7 @@ export default function Home() {
 
                 {/* Segunda fila */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["statusipg.jpg", "holisticgo.jpg", "viceversa.jpg"].map(
+                  {["statusipg.webp", "holisticgo.webp", "viceversa.webp"].map(
                     (logo, index) => (
                       <div
                         key={index + 6}
@@ -1598,7 +1600,7 @@ export default function Home() {
 
                 {/* Tercera fila */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["clinicasanjuan.jpg", "sce.jpg", "bucanero.jpg"].map(
+                  {["clinicasanjuan.webp", "sce.webp", "bucanero.webp"].map(
                     (logo, index) => (
                       <div
                         key={index + 9}
@@ -1653,12 +1655,12 @@ export default function Home() {
                 {/* Cuarta fila */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
                   {[
-                    "proactive.jpg",
-                    "industrial.jpg",
-                    "blcorredores.jpg",
-                    "tdm.jpg",
-                    "murgisa.jpg",
-                    "zaco.jpg",
+                    "proactive.webp",
+                    "industrial.webp",
+                    "blcorredores.webp",
+                    "tdm.webp",
+                    "murgisa.webp",
+                    "zaco.webp",
                   ].map((logo, index) => (
                     <div
                       key={index + 12}
@@ -1684,14 +1686,41 @@ export default function Home() {
                 </div>
                 {/* Agregar cuarta fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["huascaran.jpg", "vallenorte.jpg", "cwp_welcome.jpg"].map(
+                  {[
+                    "huascaran.webp",
+                    "vallenorte.webp",
+                    "cwp_welcome.webp",
+                  ].map((logo, index) => (
+                    <div
+                      key={index + 12}
+                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
+                    >
+                      <Image
+                        src={logo || "/placeholder.svg"}
+                        width={280}
+                        height={140}
+                        alt={
+                          index === 0
+                            ? "ProActive"
+                            : index === 1
+                            ? "Industrial Vox Analyzer"
+                            : "TRANSBER - Soluciones Logísticas Integradas"
+                        }
+                        className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+                {/* Agregar quinta fila con 3 recuadros adicionales */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["igl.webp", "ksa.webp", "serfamed.webp"].map(
                     (logo, index) => (
                       <div
                         key={index + 12}
                         className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
                       >
                         <Image
-                          src={logo || "/placeholder.svg"}
+                          src={logo}
                           width={280}
                           height={140}
                           alt={
@@ -1706,29 +1735,6 @@ export default function Home() {
                       </div>
                     )
                   )}
-                </div>
-                {/* Agregar quinta fila con 3 recuadros adicionales */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["igl.jpg", "ksa.jpg", "serfamed.jpg"].map((logo, index) => (
-                    <div
-                      key={index + 12}
-                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
-                    >
-                      <Image
-                        src={logo}
-                        width={280}
-                        height={140}
-                        alt={
-                          index === 0
-                            ? "ProActive"
-                            : index === 1
-                            ? "Industrial Vox Analyzer"
-                            : "TRANSBER - Soluciones Logísticas Integradas"
-                        }
-                        className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                      />
-                    </div>
-                  ))}
                 </div>
                 {/* Agregar sexta fila con 3 recuadros adicionales */}
                 {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
@@ -1792,17 +1798,17 @@ export default function Home() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center">
               {[
-                "tierraadentro.jpg",
-                "petroenergia.jpg",
-                "northoil.jpg",
-                "centroinvest.jpg",
-                "spe.jpg",
-                "allpawara.jpg",
-                "energiaandina.jpg",
-                "amppuni.jpg",
-                "/cntv.jpg",
-                "/colegio_ing.jpg",
-                "institutoperuanoing.jpg",
+                "tierraadentro.webp",
+                "petroenergia.webp",
+                "northoil.webp",
+                "centroinvest.webp",
+                "spe.webp",
+                "allpawara.webp",
+                "energiaandina.webp",
+                "amppuni.webp",
+                "cntv.webp",
+                "colegio_ing.webp",
+                "institutoperuanoing.webp",
               ].map((logo, index) => (
                 <div
                   key={index}
@@ -1888,8 +1894,9 @@ export default function Home() {
                 Operaciones Offshore en Marcha
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Descubre cómo se desarrollan las operaciones offshore en la
-                región Piura y su impacto en la industria petrolera nacional.
+                Descubre cómo se desarrollan las operaciones offshore en las
+                regiones Piura y Tumbes y su impacto en la industria petrolera
+                nacional.
               </p>
             </div>
             <div className="flex justify-center">
@@ -1916,6 +1923,31 @@ export default function Home() {
                     className="absolute inset-0 w-full h-full"
                   />
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Noticias Petroleras */}
+        <section id="noticias-petroleras" className="py-12 sm:py-16">
+          <div className="container mx-auto px-2 sm:px-4">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold mb-4 text-amber-700">
+                Noticias Petroleras
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Entérate de los comunicados y novedades más recientes del sector
+                petrolero.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <div className="bg-white rounded-xl shadow-lg border-2 border-amber-500 p-4 max-w-xl w-full flex flex-col items-center">
+                <Image
+                  src="/comunicado_1.webp"
+                  alt="Comunicado Petrolero"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto object-contain rounded-lg"
+                />
               </div>
             </div>
           </div>
