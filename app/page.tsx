@@ -609,6 +609,15 @@ export default function Home() {
                   isSpecial: false,
                   country: "Perú",
                 },
+                {
+                  name: "Daniel Hilario Villayonga",
+                  role: "Magister, Director Regional de Energía y Minas del Goberino Regional de Tumbes",
+                  image: "hilariovillayonga.webp",
+                  topic:
+                    "Reactivación de las Actividades de Hidrocarburos en la región Tumbes",
+                  isSpecial: false,
+                  country: "Perú",
+                },
               ].map((speaker, index) => (
                 <Card
                   key={index}
