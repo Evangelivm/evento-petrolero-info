@@ -507,7 +507,6 @@ export default function Home() {
                   "Acceso a la Zona VIP",
                   "Cocktail y Fiesta de Cierre",
                   "Acceso a los videos del evento desde la plataforma Online",
-                  "Membresía Anual (solo por pago de 3 días)",
                 ].map((item, idx) => (
                   <li
                     key={idx}
@@ -618,6 +617,15 @@ export default function Home() {
                   isSpecial: false,
                   country: "Perú",
                 },
+                {
+                  name: "Oscar Díaz",
+                  role: "CEO Viceversa Consulting SA",
+                  image: "oscar_diaz.webp",
+                  topic:
+                    "Cómo prevenir Conflictos Sociales en el Sector Hidrocarburos",
+                  isSpecial: false,
+                  country: "Perú",
+                },
               ].map((speaker, index) => (
                 <Card
                   key={index}
@@ -663,7 +671,7 @@ export default function Home() {
                 <Card className="overflow-hidden border-none shadow-md group">
                   <div className="relative w-full">
                     <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-29%20at%205.46.32%20PM-tSF9hUoWIolfzYlocmwTBxoN5a11Gc.jpeg"
+                      src="presentador.webp"
                       alt="Oscar Díaz - Maestro de Ceremonia"
                       width={400}
                       height={300}
@@ -672,7 +680,9 @@ export default function Home() {
                   </div>
                   <CardContent className="pt-6 pb-6">
                     <h3 className="text-xl font-bold">{`Oscar Díaz`}</h3>
-                    <p className="text-amber-600">CEO Viceversa Consulting</p>
+                    <p className="text-amber-600">
+                      Director Programa TV Tierra Adentro
+                    </p>
                     <p className="text-sm text-gray-600 mt-2">
                       <span className="font-medium">Rol:</span> Maestro de
                       Ceremonia
