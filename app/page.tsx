@@ -1167,6 +1167,18 @@ export default function Home() {
         </section> */}
 
         {/* Patrocinadores */}
+        {/* Marco grande para imagen especial */}
+        <div className="flex justify-center mt-10">
+          <div className="bg-white rounded-2xl border-4 border-amber-700 shadow-xl p-6 max-w-3xl w-full flex items-center justify-center">
+            <Image
+              src="patrocinio.webp"
+              alt="Patrocinador Especial"
+              width={900}
+              height={400}
+              className="w-full h-auto object-contain rounded-xl"
+            />
+          </div>
+        </div>
         <section id="patrocinadores" className="py-16">
           <div className="container mx-auto px-2 sm:px-4">
             <div className="text-center mb-12">
@@ -1442,7 +1454,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* Auspiciadores del Evento */}
         <section id="auspiciadores" className="py-12 sm:py-16 bg-slate-50">
           <div className="container mx-auto px-2 sm:px-4">
