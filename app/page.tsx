@@ -626,6 +626,23 @@ export default function Home() {
                   isSpecial: false,
                   country: "Perú",
                 },
+                {
+                  name: "Ing. Ricardo Sarmiento",
+                  role: "CEO Estrella International Energy Services",
+                  image: "ricardosarmiento.jpg",
+                  topic: "Un Futuro Energético con Enfoque en Perú",
+                  isSpecial: false,
+                  country: "Colombia",
+                },
+                {
+                  name: "Iván Miranda Zuzunaga",
+                  role: "Magister Ingeneria de Petróleo y Consultor Internacional - IPIGPE",
+                  image: "mirandazuzunaga.jpg",
+                  topic:
+                    "Oportunidades para acelerar la explotación de HC en el noroeste y la selva peruana dentro del proceso del cambio de la matriz energética",
+                  isSpecial: false,
+                  country: "Perú",
+                },
               ].map((speaker, index) => (
                 <Card
                   key={index}
@@ -1454,6 +1471,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         {/* Auspiciadores del Evento */}
         <section id="auspiciadores" className="py-12 sm:py-16 bg-slate-50">
           <div className="container mx-auto px-2 sm:px-4">
@@ -2005,11 +2023,20 @@ export default function Home() {
                 petrolero.
               </p>
             </div>
-            <div className="flex justify-center">
+            <div className="flex flex-col sm:flex-row justify-center gap-6">
               <div className="bg-white rounded-xl shadow-lg border-2 border-amber-500 p-4 max-w-xl w-full flex flex-col items-center">
                 <Image
                   src="/comunicado_1.webp"
-                  alt="Comunicado Petrolero"
+                  alt="Comunicado Petrolero 1"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto object-contain rounded-lg"
+                />
+              </div>
+              <div className="bg-white rounded-xl shadow-lg border-2 border-amber-500 p-4 max-w-xl w-full flex flex-col items-center">
+                <Image
+                  src="/comunicado_2.jpg"
+                  alt="Comunicado Petrolero 2"
                   width={600}
                   height={400}
                   className="w-full h-auto object-contain rounded-lg"
