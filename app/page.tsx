@@ -1671,7 +1671,7 @@ export default function Home() {
 
                 {/* Tercera fila */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["clinicasanjuan.webp", "sce.webp", "bucanero.webp"].map(
+                  {["clinicasanjuan.webp", "usn.webp", "bucanero.webp"].map(
                     (logo, index) => (
                       <div
                         key={index + 9}
@@ -1809,7 +1809,7 @@ export default function Home() {
                 </div>
                 {/* Agregar sexta fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["guille.webp", "usn.webp"].map((logo, index) => (
+                  {["guille.webp"].map((logo, index) => (
                     <div
                       key={index + 12}
                       className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
