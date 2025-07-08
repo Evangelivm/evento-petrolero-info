@@ -1973,23 +1973,25 @@ export default function Home() {
                 clave del sector energético.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 items-center justify-items-center">
-              {["/gob_reg_tumbes.webp", "/dir_reg_tumbes.webp"].map(
-                (logo, index) => (
-                  <div
-                    key={index}
-                    className="bg-white rounded-lg border-2 border-blue-700 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
-                  >
-                    <Image
-                      src={logo}
-                      alt={`Respaldo Gubernamental ${index + 1}`}
-                      width={480}
-                      height={140}
-                      className="object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                    />
-                  </div>
-                )
-              )}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center">
+              {[
+                "/gob_reg_tumbes.webp",
+                "/dir_reg_tumbes.webp",
+                "/gorepiura.webp",
+              ].map((logo, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg border-2 border-blue-700 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
+                >
+                  <Image
+                    src={logo}
+                    alt={`Respaldo Gubernamental ${index + 1}`}
+                    width={480}
+                    height={140}
+                    className="object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </section>
