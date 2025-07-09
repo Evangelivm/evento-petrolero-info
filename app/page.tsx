@@ -87,6 +87,11 @@ export default function Home() {
             "Dina Ercilla Boluarte Zegarra, Presidente de la Republica del Perú",
           ],
           [
+            "",
+            "BLOQUE 1: Plan Reactivacion Petrolera en 47 nuevas Areas E&P",
+            "",
+          ],
+          [
             "08:30 - 08:50",
             "Estabilidad Jurídica y Política para la Inversion en Hidrocarburos",
             "Pedro Chira Fernandez, Presidente del Directorio PERUPETRO SA",
@@ -159,6 +164,13 @@ export default function Home() {
         styles: { fontSize: 10, cellPadding: 5 },
         headStyles: { fillColor: [245, 158, 11], textColor: [255, 255, 255] },
         columnStyles: { 0: { cellWidth: 30 } },
+        didParseCell: function (data) {
+          if (data.row.index === 3 && data.section === "body") {
+            data.cell.styles.fillColor = [229, 231, 235]; // bg-gray-200 equivalent
+            data.cell.styles.fontStyle = "bold";
+            data.cell.styles.halign = "center";
+          }
+        },
       });
 
       // Día 2
@@ -643,6 +655,15 @@ export default function Home() {
                   isSpecial: false,
                   country: "Perú",
                 },
+                {
+                  name: "Alexander Lopez Briceño",
+                  role: "Ingeniero de Petroleos, Gerente de Perforación y Completamiento, Líder de Proyectos, Ingeniero Senior en Perforación Offshore y Onshore",
+                  image: "lopezbri.jpg",
+                  topic:
+                    "Tecnología en Real Time Operacional, HSEQ, Toma de decisiones estrategicas para la industria petrolera",
+                  isSpecial: false,
+                  country: "Colombia",
+                },
               ].map((speaker, index) => (
                 <Card
                   key={index}
@@ -715,7 +736,7 @@ export default function Home() {
         </section>
 
         {/* Agenda */}
-        {/* <section id="agenda" className="py-16 bg-slate-50">
+        <section id="agenda" className="py-16 bg-slate-50">
           <div className="container mx-auto px-2 sm:px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Agenda del Evento</h2>
@@ -728,8 +749,8 @@ export default function Home() {
             <Tabs defaultValue="dia1" className="max-w-4xl mx-auto">
               <TabsList className="grid w-full grid-cols-3 mb-8">
                 <TabsTrigger value="dia1">Día 12 de Agosto</TabsTrigger>
-                <TabsTrigger value="dia2">Día 13 de Agosto</TabsTrigger>
-                <TabsTrigger value="dia3">Día 14 de Agosto</TabsTrigger>
+                {/* <TabsTrigger value="dia2">Día 13 de Agosto</TabsTrigger>
+                <TabsTrigger value="dia3">Día 14 de Agosto</TabsTrigger> */}
               </TabsList>
 
               <TabsContent
@@ -757,6 +778,12 @@ export default function Home() {
                       title: "Inauguración del Foro",
                       speaker:
                         "Dina Ercilla Boluarte Zegarra, Presidente de la Republica del Perú",
+                    },
+                    {
+                      time: "",
+                      title:
+                        "BLOQUE 1: Plan Reactivacion Petrolera en 47 nuevas Areas E&P",
+                      speaker: "",
                     },
                     {
                       time: "08:30 - 08:50",
@@ -798,7 +825,7 @@ export default function Home() {
                         "Asaid Bandach Gallegos, Gerente Tecnico y de Recursos de Información PERUPETRO SA",
                     },
                     {
-                      time: "11:20 - 12:30",
+                      time: "11:30 - 12:15",
                       title: "Panel de comentarios",
                       panelists: [
                         "Manuel Farias, Director de Perforacion CAPPETROL",
@@ -810,7 +837,7 @@ export default function Home() {
                         "Guillermo Morales, Presidente CIP - Comite Talara",
                     },
                     {
-                      time: "12:30 - 14:00",
+                      time: "12:15 - 14:00",
                       title: "Almuerzo Libre",
                       speaker: "",
                     },
@@ -819,91 +846,156 @@ export default function Home() {
                       title:
                         "El Agua, agente transformador en la industria de los Hidrocarburos",
                       speaker:
-                        "Cesar Pabon Martínez, Ingeniero Senior Andes Operating Company EEUU (Colombia)",
+                        "Cesar Pabon Martínez, Ingeniero Senior de Operaciones Compañía Operadora Andes Operating Company EEUU (Colombia)",
                     },
                     {
-                      time: "14:20 - 14:40",
-                      title: "Tema por confirmar",
+                      time: "14:30 - 14:50",
+                      title:
+                        "Pozos de Emergencia en Campos Maduros. Pauta para la identificacion de Areas Potenciales con Reservas",
+                      speaker:
+                        "Ricardo Yam Camacho, Project Management Servicios Integrales Nuevo Santander (EEUU)",
+                    },
+                    {
+                      time: "15:00 - 15:20",
+                      title: "Un futuro energetico con enfoque en Perú",
                       speaker:
                         "Ricardo Andres Sarmiento, CEO Estrella International Energy Services (Argentina)",
-                    },
-                    {
-                      time: "14:40 - 15:00",
-                      title:
-                        "Soluciones para Mercado Off Shore/On Shore para Izaje y Amarre de Cargas",
-                      speaker:
-                        "Ednaldo da Purificação Silva, Director Tecnofextil IND e COM (Brasil)",
+                      id: "peru-energy",
                     },
                     {
                       time: "15:00 - 15:20",
                       title:
-                        "Estrategias de Gestión para Reactivacion del Sector Hidrocarburos",
+                        "Reactivación de las Actividades de Hidrocarburos en la Región Tumbes",
                       speaker:
-                        "Rafael Reyes Vivas, Ex Vice Ministro de Hidrocarburos Minem (Perú)",
+                        "Daniel Hilario Villayonga, Director Regional de Energia y Minas (Perú)",
+                      id: "tumbes-reactivation",
                     },
                     {
-                      time: "15:20 - 15:40",
+                      time: "15:30 - 15:50",
                       title:
-                        "El Rol de Peruperto, Ejecutivo y Legislativo en Reactivacion Petrolera de la Region Piura",
+                        "Tecnologia en Real Time Operacional, HSEQ, Toma de decisiones estrategicas para la Industria Petrolera",
                       speaker:
-                        "Carlos Gonzales Avila, Director General Enerconsult (Perú)",
+                        "Alexander Lopez Briceño, Gerente de Perforacion y Completacion de Pozos (Colombia)",
                     },
                     {
-                      time: "15:40 - 16:00",
+                      time: "16:00 - 16:20",
                       title: "Coffee Break",
                       speaker: "",
                     },
                     {
-                      time: "16:00 - 16:20",
-                      title: "Tema por confirmar",
+                      time: "16:30 - 16:50",
+                      title:
+                        "Soluciones para el Mercado Off Shore y On Shore para Izaje y Amarre de Cargas",
                       speaker:
-                        "Efraín Gamarra Zegarra, Gerente General IMI Del Perú SAC (Perú)",
+                        "Ednaldo da Purificacao Silva, Director y Conferencista Tecnotextil IND e COM (Brasil)",
                     },
                     {
-                      time: "16:20 - 17:30",
+                      time: "17:00 - 18:00",
                       title: "PITCH COMERCIAL COMPAÑIAS PETROLERAS",
                       speaker:
-                        "Andes Operating Company, Rodatech, Estrella Petrolera, IMI, Axure, Transber",
+                        "Andes Operating Company, Sains, Estrella Petrolera, Petrodynamic, Transber",
                     },
-                  ].map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex border-b pb-4 last:border-0 last:pb-0"
-                    >
-                      <div className="w-32 flex-shrink-0 font-medium text-amber-600">
-                        {item.time}
-                      </div>
-                      <div>
-                        <h4 className="font-bold">{item.title}</h4>
-
-                        {item.speaker && (
-                          <p className="text-gray-600 text-sm">
-                            {item.speaker}
-                          </p>
-                        )}
-
-                        {/* Renderizado especial para el panel */}
-        {/* {item.title === "Panel de comentarios" && (
-                          <div className="text-gray-600 text-sm mt-2">
-                            <div className="font-semibold mb-1">
-                              Panelistas:
+                  ].map((item, index, array) => {
+                    // Check if this is the first of the two concurrent items
+                    if (item.id === "peru-energy") {
+                      const nextItem = array[index + 1]; // Get the next item
+                      if (nextItem && nextItem.id === "tumbes-reactivation") {
+                        return (
+                          <div
+                            key={index}
+                            className="flex border-b pb-4 last:border-0 last:pb-0"
+                          >
+                            <div className="w-32 flex-shrink-0 font-medium text-amber-600">
+                              {item.time}
                             </div>
-                            <ul className="list-disc pl-5 space-y-1">
-                              {item.panelists?.map((panelist, idx) => (
-                                <li key={idx}>{panelist}</li>
-                              ))}
-                            </ul>
-                            <div className="font-semibold mt-2">Moderador:</div>
-                            <p>{item.moderator}</p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                              {/* First concurrent item */}
+                              <div>
+                                <h4 className="font-bold">{item.title}</h4>
+                                {item.speaker && (
+                                  <p className="text-gray-600 text-sm">
+                                    {item.speaker}
+                                  </p>
+                                )}
+                              </div>
+                              {/* Second concurrent item */}
+                              <div>
+                                <h4 className="font-bold">{nextItem.title}</h4>
+                                {nextItem.speaker && (
+                                  <p className="text-gray-600 text-sm">
+                                    {nextItem.speaker}
+                                  </p>
+                                )}
+                              </div>
+                            </div>
                           </div>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </TabsContent> */}
+                        );
+                      }
+                    } else if (item.id === "tumbes-reactivation") {
+                      // If this is the second concurrent item, it's already rendered by the first one, so skip it.
+                      return null;
+                    }
+                    // Handle the "BLOQUE 1" item
+                    else if (
+                      item.title ===
+                      "BLOQUE 1: Plan Reactivacion Petrolera en 47 nuevas Areas E&P"
+                    ) {
+                      return (
+                        <div
+                          key={index}
+                          className="w-full text-center bg-gray-100 py-4 rounded-md shadow-sm"
+                        >
+                          <h4 className="font-bold text-lg text-gray-800">
+                            {item.title}
+                          </h4>
+                        </div>
+                      );
+                    }
+                    // Handle all other regular items
+                    else {
+                      return (
+                        <div
+                          key={index}
+                          className="flex border-b pb-4 last:border-0 last:pb-0"
+                        >
+                          <div className="w-32 flex-shrink-0 font-medium text-amber-600">
+                            {item.time}
+                          </div>
+                          <div>
+                            <h4 className="font-bold">{item.title}</h4>
 
-        {/* <TabsContent
+                            {item.speaker && (
+                              <p className="text-gray-600 text-sm">
+                                {item.speaker}
+                              </p>
+                            )}
+
+                            {/* Renderizado especial para el panel */}
+                            {item.title === "Panel de comentarios" && (
+                              <div className="text-gray-600 text-sm mt-2">
+                                <div className="font-semibold mb-1">
+                                  Panelistas:
+                                </div>
+                                <ul className="list-disc pl-5 space-y-1">
+                                  {item.panelists?.map((panelist, idx) => (
+                                    <li key={idx}>{panelist}</li>
+                                  ))}
+                                </ul>
+                                <div className="font-semibold mt-2">
+                                  Moderador:
+                                </div>
+                                <p>{item.moderator}</p>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    }
+                  })}
+                </div>
+              </TabsContent>
+
+              <TabsContent
                 value="dia2"
                 className="border rounded-lg p-6 shadow-sm"
               >
@@ -958,9 +1050,9 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-              </TabsContent> */}
+              </TabsContent>
 
-        {/* <TabsContent
+              <TabsContent
                 value="dia3"
                 className="border rounded-lg p-6 shadow-sm"
               >
@@ -1015,9 +1107,9 @@ export default function Home() {
                   ))}
                 </div>
               </TabsContent>
-            </Tabs> */}
+            </Tabs>
 
-        {/* <div className="flex justify-center mt-10">
+            {/* <div className="flex justify-center mt-10">
               <Button
                 className="bg-amber-600 hover:bg-amber-700 flex items-center justify-center gap-2 mx-auto"
                 onClick={generateProgramPDF}
@@ -1035,9 +1127,9 @@ export default function Home() {
                   </>
                 )}
               </Button>
-            </div>
+            </div> */}
           </div>
-        </section> */}
+        </section>
 
         {/* Organiza */}
         <section id="organiza" className="py-12 sm:py-16 bg-slate-50">
