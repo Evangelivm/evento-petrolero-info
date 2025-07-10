@@ -664,6 +664,15 @@ export default function Home() {
                   isSpecial: false,
                   country: "Colombia",
                 },
+                {
+                  name: "Ing. Ricardo Yam Camacho",
+                  role: "Well Engineering & Project Management for the Enery Industry",
+                  image: "yamcamacho.jpg",
+                  topic:
+                    "Pozos de Emergencia en Campos Maduros. Pauta para la Identificación de Áreas Potenciales con Reservas",
+                  isSpecial: false,
+                  country: "E.E.U.U.",
+                },
               ].map((speaker, index) => (
                 <Card
                   key={index}
@@ -857,7 +866,7 @@ export default function Home() {
                     },
                     {
                       time: "15:00 - 15:20",
-                      title: "Un futuro energetico con enfoque en Perú",
+                      title: "Un Futuro Energético con Enfoque en Perú",
                       speaker:
                         "Ricardo Andres Sarmiento, CEO Estrella International Energy Services (Argentina)",
                       id: "peru-energy",
@@ -910,7 +919,7 @@ export default function Home() {
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
                               {/* First concurrent item */}
-                              <div>
+                              <div className="md:border-r md:border-gray-300 md:pr-4">
                                 <h4 className="font-bold">{item.title}</h4>
                                 {item.speaker && (
                                   <p className="text-gray-600 text-sm">
@@ -919,7 +928,7 @@ export default function Home() {
                                 )}
                               </div>
                               {/* Second concurrent item */}
-                              <div>
+                              <div className="md:pl-4">
                                 <h4 className="font-bold">{nextItem.title}</h4>
                                 {nextItem.speaker && (
                                   <p className="text-gray-600 text-sm">
