@@ -1357,27 +1357,29 @@ export default function Home() {
                   )}
                 </div>
                 {/* Agregar tercera fila con 3 recuadros adicionales */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["/petrodynamic.webp", "/sins.webp"].map((logo, index) => (
-                    <div
-                      key={index + 3}
-                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
-                    >
-                      <Image
-                        src={logo || "/placeholder.svg"}
-                        alt={
-                          index === 0
-                            ? "Status International Petroleum Group"
-                            : index === 1
-                            ? "Holistic Go"
-                            : "Vice Versa Consulting"
-                        }
-                        width={480}
-                        height={140}
-                        className="object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                      />
-                    </div>
-                  ))}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["/petrodynamic.webp", "/sins.webp", "/petroperu.jpg"].map(
+                    (logo, index) => (
+                      <div
+                        key={index + 3}
+                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
+                      >
+                        <Image
+                          src={logo || "/placeholder.svg"}
+                          alt={
+                            index === 0
+                              ? "Status International Petroleum Group"
+                              : index === 1
+                              ? "Holistic Go"
+                              : "Vice Versa Consulting"
+                          }
+                          width={480}
+                          height={140}
+                          className="object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                        />
+                      </div>
+                    )
+                  )}
                 </div>
                 {/* Agregar cuarta fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
