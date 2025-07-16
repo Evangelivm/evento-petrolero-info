@@ -497,6 +497,32 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Imagen de Banner Responsivo */}
+        <section className="w-full overflow-hidden flex justify-center bg-amber-500">
+          {/* Desktop Image */}
+          <div className="hidden md:block w-full max-w-[1600px]">
+            <Image
+              src="/prices_pc.webp"
+              alt="Banner Reactiva-Petrol (Desktop)"
+              width={1600}
+              height={584}
+              className="w-full h-auto object-contain"
+              priority
+            />
+          </div>
+          {/* Mobile Image */}
+          <div className="md:hidden w-full">
+            <Image
+              src="/prices_phone.webp"
+              alt="Banner Reactiva-Petrol (Mobile)"
+              width={750}
+              height={1334}
+              className="w-full h-auto object-contain"
+              priority
+            />
+          </div>
+        </section>
+
         {/* Beneficios de tu Entrada */}
         <section id="beneficios" className="py-12 sm:py-16">
           <div className="container mx-auto px-2 sm:px-4">
@@ -2115,9 +2141,9 @@ export default function Home() {
                 nacional.
               </p>
             </div>
-            <div className="flex justify-center">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-6">
               {/* Contenedor para el primer video */}
-              <div className="bg-white rounded-xl shadow-lg border-2 border-amber-500 p-4 max-w-[380px] w-full flex flex-col items-center mr-6">
+              <div className="bg-white rounded-xl shadow-lg border-2 border-amber-500 p-4 max-w-[380px] w-full flex flex-col items-center">
                 <div className="relative w-[270px] h-[480px] rounded-lg overflow-hidden bg-black flex items-center justify-center">
                   <iframe
                     src="op_offshore.webm"
