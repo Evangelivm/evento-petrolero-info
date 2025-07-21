@@ -340,7 +340,7 @@ export default function Home() {
           </nav>
           <div className="w-full max-w-[110px] md:max-w-none md:w-auto flex-shrink-0">
             <Button className="bg-amber-600 hover:bg-amber-700 w-full md:w-auto text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2 h-7 sm:h-10 min-h-0">
-              <a href="https://evento.reactivapetroltalara.online/">
+              <a href="https://reactivapetroltalara.online/">
                 <span className="block truncate sm:hidden">TICKETS</span>
                 <span className="hidden sm:block truncate">
                   ADQUIERE TUS TICKETS
@@ -386,7 +386,7 @@ export default function Home() {
                     size="lg"
                     className="bg-amber-600 hover:bg-amber-700 w-full sm:w-auto text-base"
                   >
-                    <a href="https://evento.reactivapetroltalara.online/">
+                    <a href="https://reactivapetroltalara.online/">
                       Inscríbete Ahora
                     </a>
                   </Button>
