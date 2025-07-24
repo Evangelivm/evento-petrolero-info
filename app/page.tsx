@@ -498,9 +498,9 @@ export default function Home() {
         </section>
 
         {/* Imagen de Banner Responsivo */}
-        <section className="w-full overflow-hidden flex justify-center bg-amber-500">
-          {/* Desktop Image */}
-          <div className="hidden md:block w-full max-w-[1600px]">
+        {/* <section className="w-full overflow-hidden flex justify-center bg-amber-500"> */}
+        {/* Desktop Image */}
+        {/* <div className="hidden md:block w-full max-w-[1600px]">
             <Image
               src="/prices_pc.webp"
               alt="Banner Reactiva-Petrol (Desktop)"
@@ -509,9 +509,9 @@ export default function Home() {
               className="w-full h-auto object-contain"
               priority
             />
-          </div>
-          {/* Mobile Image */}
-          <div className="md:hidden w-full">
+          </div> */}
+        {/* Mobile Image */}
+        {/* <div className="md:hidden w-full">
             <Image
               src="/prices_phone.webp"
               alt="Banner Reactiva-Petrol (Mobile)"
@@ -521,7 +521,7 @@ export default function Home() {
               priority
             />
           </div>
-        </section>
+        </section> */}
 
         {/* Beneficios de tu Entrada */}
         <section id="beneficios" className="py-12 sm:py-16">
@@ -1986,6 +1986,29 @@ export default function Home() {
                     )
                   )}
                 </div>
+                {/* Agregar octava fila con 3 recuadros adicionales */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["ricenergy.jpg"].map((logo, index) => (
+                    <div
+                      key={index + 12}
+                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
+                    >
+                      <Image
+                        src={logo}
+                        width={280}
+                        height={140}
+                        alt={
+                          index === 0
+                            ? "ProActive"
+                            : index === 1
+                            ? "Industrial Vox Analyzer"
+                            : "TRANSBER - Soluciones Logísticas Integradas"
+                        }
+                        className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -2199,6 +2222,34 @@ export default function Home() {
                   height={400}
                   className="w-full h-auto object-contain rounded-lg"
                 />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* TV Video */}
+        <section id="tv-video" className="py-12 sm:py-16 bg-slate-50">
+          <div className="container mx-auto px-2 sm:px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4 text-amber-700">
+                TierraAdentro con Oscar Díaz
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Entrevista exclusiva en TierraAdentro sobre el ambiente
+                petrolero.
+              </p>
+            </div>
+            <div className="flex justify-center items-center gap-6">
+              {/* Contenedor para el video */}
+              <div className="bg-white rounded-xl shadow-lg border-2 border-amber-500 p-4 max-w-[420px] w-full flex flex-col items-center">
+                <div className="relative w-[360px] h-[640px] rounded-lg overflow-hidden bg-black flex items-center justify-center">
+                  <iframe
+                    src="tv_video.webm"
+                    title="TierraAdentro con Oscar Diaz"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                  />
+                </div>
               </div>
             </div>
           </div>
