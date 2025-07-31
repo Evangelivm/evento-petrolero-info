@@ -699,6 +699,23 @@ export default function Home() {
                   isSpecial: false,
                   country: "E.E.U.U.",
                 },
+                {
+                  name: "Ing. Luis Alfonso Del Angel Calles",
+                  role: "Compañía Operadora SINS",
+                  image: "delangelcalles.jpg",
+                  topic:
+                    "La Nueva Frontera de la Prevención, Analisis de Riesgo enfocados en el cambio",
+                  isSpecial: false,
+                  country: "E.E.U.U.",
+                },
+                {
+                  name: "Ing. Tomas Diaz del Águila",
+                  role: "Gerente Corporativo Exploración Producción, Petroleos del Perú - Petroperú S.A",
+                  image: "diazdelaguila.webp",
+                  topic: "Integración Vertical Petroperú SA",
+                  isSpecial: false,
+                  country: "Perú",
+                },
               ].map((speaker, index) => (
                 <Card
                   key={index}
@@ -1988,7 +2005,7 @@ export default function Home() {
                 </div>
                 {/* Agregar octava fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["ricenergy.jpg"].map((logo, index) => (
+                  {["ricenergy.jpg", "romero.webp"].map((logo, index) => (
                     <div
                       key={index + 12}
                       className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
