@@ -376,10 +376,11 @@ export default function Home() {
                   en las Regiones Piura y Tumbes
                 </h1>
                 <p className="text-xl text-gray-300">
-                  Impulsando las Operaciones Offshore y OnShore en Cuencas
-                  Talara y Tumbes. El evento más importante del sector
-                  petrolero. Tres días de conferencias, networking y
-                  exposiciones con los líderes de la industria.
+                  Impulsando las Operaciones de Exploración y Producción
+                  Offshore y OnShore en Cuenca Talara y Tumbes. El evento más
+                  importante del sector petrolero. Tres días de conferencias,
+                  networking y exposiciones con los líderes del más alto nivel
+                  de la Industria Petrolera.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Button
@@ -692,7 +693,7 @@ export default function Home() {
                 },
                 {
                   name: "Ing. Ricardo Yam Camacho",
-                  role: "Well Engineering & Project Management for the Enery Industry",
+                  role: "Well Engineering & Project Management for the Enery Industry - Compañia Operadora SINS",
                   image: "yamcamacho.jpg",
                   topic:
                     "Pozos de Emergencia en Campos Maduros. Pauta para la Identificación de Áreas Potenciales con Reservas",
@@ -713,6 +714,15 @@ export default function Home() {
                   role: "Gerente Corporativo Exploración Producción, Petroleos del Perú - Petroperú S.A",
                   image: "diazdelaguila.webp",
                   topic: "Integración Vertical Petroperú SA",
+                  isSpecial: false,
+                  country: "Perú",
+                },
+                {
+                  name: "Ing. Gustavo Villa Mora",
+                  role: "Gerente Operaciones Talara, Petroleos del Perú - Petroperú S.A",
+                  image: "villamora.jpg",
+                  topic:
+                    "Rol Estrategico de la Refineria Talara en la Industria Oil & Gas del Perú",
                   isSpecial: false,
                   country: "Perú",
                 },
@@ -801,8 +811,8 @@ export default function Home() {
             <Tabs defaultValue="dia1" className="max-w-4xl mx-auto">
               <TabsList className="grid w-full grid-cols-3 mb-8">
                 <TabsTrigger value="dia1">Día 12 de Agosto</TabsTrigger>
-                {/* <TabsTrigger value="dia2">Día 13 de Agosto</TabsTrigger>
-                <TabsTrigger value="dia3">Día 14 de Agosto</TabsTrigger> */}
+                <TabsTrigger value="dia2">Día 13 de Agosto</TabsTrigger>
+                <TabsTrigger value="dia3">Día 14 de Agosto</TabsTrigger>
               </TabsList>
 
               <TabsContent
@@ -840,7 +850,7 @@ export default function Home() {
                     {
                       time: "08:30 - 08:50",
                       title:
-                        "Estabilidad Jurídica y Política para la Inversion en Hidrocarburos",
+                        "Hidrocarburos: Desafios para impulsar la actividad exploratoria en el Perú",
                       speaker:
                         "Pedro Chira Fernandez, Presidente del Directorio PERUPETRO SA",
                     },
@@ -854,7 +864,7 @@ export default function Home() {
                     {
                       time: "09:30 - 09:45",
                       title:
-                        "FLASH DE PRODUCCION: Anuncio Nacional Inversiones en Cuenca Talara Ingresa a Perú un nuevo E&P",
+                        "FLASH DE PRODUCCION: Anuncio Nacional Inversiones en Cuenca Talara Ingresa a Perú un nuevo actor E&P",
                       speaker: "",
                     },
                     {
@@ -867,23 +877,22 @@ export default function Home() {
                       title:
                         "Estrategias para la Revitalización de Campos Maduros",
                       speaker:
-                        "Hugo Gustavo Pelilza, Consultor de Gestión en Petroleo y Gas",
+                        "Hugo Gustavo Pelilza, Consultor de Gestión en Petroleo y Gas - CAPPETROL Argentina",
                     },
                     {
                       time: "11:00 - 11:20",
-                      title:
-                        "Reactivacion Petrolera en 47 nuevas Areas Fase cero",
+                      title: "Potencial Hidrocarburifero del Peru ",
                       speaker:
-                        "Asaid Bandach Gallegos, Gerente Tecnico y de Recursos de Información PERUPETRO SA",
+                        "Asaid Bandach Gallegos, Gerente Tecnico y de Recursos de Información PERUPETRO SA Perú",
                     },
                     {
                       time: "11:30 - 12:15",
                       title: "Panel de comentarios",
                       panelists: [
-                        "Manuel Farias, Director de Perforacion CAPPETROL",
-                        "Tomas Diaz, Gerente de Exploracion y Produccion, PETROPERU SA",
-                        "Oscar Ferney, Director General, ACIPET",
-                        "Segismundo Cruces, Gobernador Regional, Tumbes",
+                        "Oscar Vera Gargurevich, Gerente General, Petroperu SA",
+                        "Eduardo La Torre, Director de Permisos, Regulatoria CAPPETROL",
+                        "Gabby Julca, Directora Regional de Energia y Minas, Piura",
+                        "Daniel Hilario, Director Regional de Energia y Minas, Tumbes",
                       ],
                       moderator:
                         "Guillermo Morales, Presidente CIP - Comite Talara",
@@ -896,16 +905,15 @@ export default function Home() {
                     {
                       time: "14:00 - 14:20",
                       title:
-                        "El Agua, agente transformador en la industria de los Hidrocarburos",
+                        "Pozos de Emergencia en Campos Maduros. Pauta para la identificacion de Areas Potenciales con Reservas",
                       speaker:
-                        "Cesar Pabon Martínez, Ingeniero Senior de Operaciones Compañía Operadora Andes Operating Company EEUU (Colombia)",
+                        "Ricardo Yam Camacho, Project Management Compañia Operadora SINS - EEUU",
                     },
                     {
                       time: "14:30 - 14:50",
-                      title:
-                        "Pozos de Emergencia en Campos Maduros. Pauta para la identificacion de Areas Potenciales con Reservas",
+                      title: "Tema a exponer (RESERVADO)",
                       speaker:
-                        "Ricardo Yam Camacho, Project Management Servicios Integrales Nuevo Santander (EEUU)",
+                        "Arturo Rodriguez Paredes, Gerente Corporativo Operaciones Compañía Operadora Petroleos del Perú -  PETROPERU SA - Perú",
                     },
                     {
                       time: "15:00 - 15:20",
@@ -914,20 +922,33 @@ export default function Home() {
                         "Ricardo Andres Sarmiento, CEO Estrella International Energy Services (Argentina)",
                       id: "peru-energy",
                     },
+                    // {
+                    //   time: "15:00 - 15:20",
+                    //   title:
+                    //     "Reactivación de las Actividades de Hidrocarburos en la Región Tumbes",
+                    //   speaker:
+                    //     "Daniel Hilario Villayonga, Director Regional de Energia y Minas (Perú)",
+                    //   id: "tumbes-reactivation",
+                    // },
                     {
-                      time: "15:00 - 15:20",
-                      title:
-                        "Reactivación de las Actividades de Hidrocarburos en la Región Tumbes",
+                      time: "14:50 - 15:00",
+                      title: "Un Futuro Energético con Enfoque en Perú",
                       speaker:
-                        "Daniel Hilario Villayonga, Director Regional de Energia y Minas (Perú)",
-                      id: "tumbes-reactivation",
+                        "Ricardo Andres Sarmiento, CEO Estrella International Energy Services (Argentina)",
                     },
                     {
-                      time: "15:30 - 15:50",
+                      time: "15:00 - 15:20",
                       title:
                         "Tecnologia en Real Time Operacional, HSEQ, Toma de decisiones estrategicas para la Industria Petrolera",
                       speaker:
                         "Alexander Lopez Briceño, Gerente de Perforacion y Completacion de Pozos (Colombia)",
+                    },
+                    {
+                      time: "15:30 - 15:50",
+                      title:
+                        "Soluciones para el Mercado Off Shore y On Shore para Izaje y Amarre de Cargas",
+                      speaker:
+                        "Ednaldo da Purificacao Silva, Director y Conferencista Tecnotextil IND e COM (Brasil)",
                     },
                     {
                       time: "16:00 - 16:20",
@@ -937,15 +958,15 @@ export default function Home() {
                     {
                       time: "16:30 - 16:50",
                       title:
-                        "Soluciones para el Mercado Off Shore y On Shore para Izaje y Amarre de Cargas",
+                        "Reactivacion de las Actividades de Hidrocarburos en la Region Tumbes",
                       speaker:
-                        "Ednaldo da Purificacao Silva, Director y Conferencista Tecnotextil IND e COM (Brasil)",
+                        "Daniel Hilario Villayonga, Director Regional de Energia y Minas - Perú",
                     },
                     {
                       time: "17:00 - 18:00",
                       title: "PITCH COMERCIAL COMPAÑIAS PETROLERAS",
                       speaker:
-                        "Andes Operating Company, Sains, Estrella Petrolera, Petrodynamic, Transber",
+                        "Andes Operating Company, SINS, Estrella Petrolera, Petrodynamic, Transber",
                     },
                   ].map((item, index, array) => {
                     // Check if this is the first of the two concurrent items
@@ -1056,51 +1077,218 @@ export default function Home() {
                 </h3>
                 <div className="space-y-6">
                   {[
-                    { time: "08:30 - 09:00", title: "Café de Bienvenida" },
                     {
-                      time: "09:00 - 10:30",
+                      time: "07:15 - 07:50",
+                      title: "Inscripcion de Participantes",
+                    },
+                    {
+                      time: "07:50 - 08:10",
+                      title: "Tema a exponer (RESERVADO)",
+                      speaker:
+                        "Gustavo Villa Mora, Gerente Operaciones Talara Compañia Operadora Petroleos del Peru - PETROPERU SA - Peru",
+                    },
+                    {
+                      time: "08:10 - 08:30",
                       title:
-                        "Conferencia: Reducción de Emisiones en Operaciones",
-                      speaker: "Hugo G. Pelliza, YPF Argentina",
+                        "Estrategias de Gestion para la Reactivacion del Sector Hidrocarburos",
+                      speaker:
+                        "Rafael Reyes Vivas, Ex Vicemistro de Hidrocarburos del MINEM - Peru",
                     },
                     {
-                      time: "10:45 - 12:15",
-                      title: "Panel: Estrategias ESG en el Sector Petrolero",
-                      speaker: "Varios Ponentes",
-                    },
-                    { time: "12:30 - 14:00", title: "Almuerzo Networking" },
-                    {
-                      time: "14:15 - 15:45",
-                      title: "Taller: Certificaciones Ambientales",
-                      speaker: "Equipo de Certificación, EcoOil",
+                      time: "",
+                      title: "BLOQUE 2: Remediacion Ambiental en 3265 Pasivos",
+                      speaker: "",
                     },
                     {
-                      time: "16:00 - 17:30",
-                      title: "Conferencia: Economía Circular en la Industria",
-                      speaker: "Laura Vázquez, ALAP",
+                      time: "08:30 - 09:10",
+                      title:
+                        "Surfactant Exhanced In - Situ and Ex In - Situ, Remediation of Petroleum and Chlorinated Contaminated Soil and Groundwater To site Closure",
+                      speaker:
+                        "George (Bud), President & Remediation Specialist IVEY INTERNATIONAL - Canada",
                     },
                     {
-                      time: "17:45 - 19:00",
-                      title: "Cena de Gala (Solo para VIP)",
+                      time: "09:10 - 09:30",
+                      title: "Tema a exponer (RESERVADO)",
+                      speaker: "Expositor por definir, Tema Litoclean - Peru",
                     },
-                  ].map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex border-b pb-4 last:border-0 last:pb-0"
-                    >
-                      <div className="w-32 flex-shrink-0 font-medium text-amber-600">
-                        {item.time}
-                      </div>
-                      <div>
-                        <h4 className="font-bold">{item.title}</h4>
-                        {item.speaker && (
-                          <p className="text-gray-600 text-sm">
-                            {item.speaker}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  ))}
+                    {
+                      time: "09:30 - 10:00",
+                      title:
+                        "Manejo regulatorio para el manejo de pasivos ambientales en la Cuenca de Talara",
+                      speaker:
+                        "Eduardo Guevara Doods, Ex Vicemistro de Hidrocarburos del MINEM - Peru",
+                    },
+                    {
+                      time: "10:00 - 10:20",
+                      title: "Coffee Break",
+                      speaker: "",
+                    },
+                    {
+                      time: "10:30 - 10:00",
+                      title: "Integracion Vertical PETROPERU SA",
+                      speaker:
+                        "Tomas Diaz Del Aguila, Gerente Corporativo Exploracion y Produccion Compañia Operadora Petroleos del Peru - PETROPERU SA - Peru",
+                    },
+                    {
+                      time: "11:00 - 11:20",
+                      title:
+                        "Como prevenir conflictos sociales en el Sector Hidrocrburos",
+                      speaker:
+                        "Oscar Diaz Moscoso, CEO Viceversa Consulting SA - Peru",
+                    },
+                    {
+                      time: "11:30 - 12:15",
+                      title: "Tema a exponer (RESERVADO)",
+                      speaker:
+                        "Armando Torres Valenzuela, General Manager Peru, Estrella International Energy Services Ltd -  Colombia",
+                    },
+                    {
+                      time: "12:15 - 14:00",
+                      title: "Almuerzo Libre",
+                      speaker: "",
+                    },
+                    {
+                      time: "14:00 - 14:20",
+                      title:
+                        "El Agua, agente transformador de la Industria de los Hidrocarburos",
+                      speaker:
+                        "Cesar Pabon Martinez, Ingeniero Senior de Operaciones, Compañia Operadora Andes Operating Company Llc -  Colombia",
+                    },
+                    {
+                      time: "15:00 - 15:20",
+                      title:
+                        "El Rol de Perupetro, el Ejecutivo y el Legislativo en la Reactivacion Petrolera de la Region Piura",
+                      speaker:
+                        "Carlos Gonzales Avila, Director General Enerconsult SA - Peru",
+                      id: "peru-energy",
+                    },
+                    {
+                      time: "15:00 - 15:20",
+                      title:
+                        "Oportunidades para acelerar la Explotacion de Hidrocarburos en el Noroeste y la Selva Peruana dentro del proceso del cambio de la matriz energetica",
+                      speaker: "Ivan Miranda Zuzunaga, Consultor E&P - Peru",
+                      id: "tumbes-reactivation",
+                    },
+                    {
+                      time: "15:30 - 15:50",
+                      title: "Tema a exponer (RESERVADO)",
+                      speaker:
+                        "Tomas Diaz Del Aguila, Jose Chuna Alburqueque Gerente Corporativo, BA Servicios Ambientales SA - Peru",
+                    },
+                    {
+                      time: "16:00 - 16:20",
+                      title: "Coffee Break",
+                      speaker: "",
+                    },
+                    {
+                      time: "16:30 - 16:50",
+                      title:
+                        "Visita Guiada a Refineria Talara - PETROPERU SA (Inversionistas Extranjeros",
+                      speaker: "",
+                    },
+                    {
+                      time: "17:00 - 18:00",
+                      title: "PITCH COMERCIAL COMPAÑIAS PETROLERAS",
+                      speaker:
+                        "Petroperu, Rodatech, Axure Technologies, Climber World, Tema Litoclean",
+                    },
+                  ].map((item, index, array) => {
+                    // Check if this is the first of the two concurrent items
+                    if (item.id === "peru-energy") {
+                      const nextItem = array[index + 1]; // Get the next item
+                      if (nextItem && nextItem.id === "tumbes-reactivation") {
+                        return (
+                          <div
+                            key={index}
+                            className="flex border-b pb-4 last:border-0 last:pb-0"
+                          >
+                            <div className="w-32 flex-shrink-0 font-medium text-amber-600">
+                              {item.time}
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                              {/* First concurrent item */}
+                              <div className="md:border-r md:border-gray-300 md:pr-4">
+                                <h4 className="font-bold">{item.title}</h4>
+                                {item.speaker && (
+                                  <p className="text-gray-600 text-sm">
+                                    {item.speaker}
+                                  </p>
+                                )}
+                              </div>
+                              {/* Second concurrent item */}
+                              <div className="md:pl-4">
+                                <h4 className="font-bold">{nextItem.title}</h4>
+                                {nextItem.speaker && (
+                                  <p className="text-gray-600 text-sm">
+                                    {nextItem.speaker}
+                                  </p>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      }
+                    } else if (item.id === "tumbes-reactivation") {
+                      // If this is the second concurrent item, it's already rendered by the first one, so skip it.
+                      return null;
+                    }
+                    // Handle the "BLOQUE 1" item
+                    else if (
+                      item.title ===
+                      "BLOQUE 2: Remediacion Ambiental en 3265 Pasivos"
+                    ) {
+                      return (
+                        <div
+                          key={index}
+                          className="w-full text-center bg-gray-100 py-4 rounded-md shadow-sm"
+                        >
+                          <h4 className="font-bold text-lg text-gray-800">
+                            {item.title}
+                          </h4>
+                        </div>
+                      );
+                    }
+                    // Handle all other regular items
+                    else {
+                      return (
+                        <div
+                          key={index}
+                          className="flex border-b pb-4 last:border-0 last:pb-0"
+                        >
+                          <div className="w-32 flex-shrink-0 font-medium text-amber-600">
+                            {item.time}
+                          </div>
+                          <div>
+                            <h4 className="font-bold">{item.title}</h4>
+
+                            {item.speaker && (
+                              <p className="text-gray-600 text-sm">
+                                {item.speaker}
+                              </p>
+                            )}
+
+                            {/* Renderizado especial para el panel
+                            {item.title === "Panel de comentarios" && (
+                              <div className="text-gray-600 text-sm mt-2">
+                                <div className="font-semibold mb-1">
+                                  Panelistas:
+                                </div>
+                                <ul className="list-disc pl-5 space-y-1">
+                                  {item.panelists?.map((panelist, idx) => (
+                                    <li key={idx}>{panelist}</li>
+                                  ))}
+                                </ul>
+                                <div className="font-semibold mt-2">
+                                  Moderador:
+                                </div>
+                                <p>{item.moderator}</p>
+                              </div>
+                            )} */}
+                          </div>
+                        </div>
+                      );
+                    }
+                  })}
                 </div>
               </TabsContent>
 
@@ -1113,32 +1301,70 @@ export default function Home() {
                 </h3>
                 <div className="space-y-6">
                   {[
-                    { time: "08:30 - 09:00", title: "Café de Bienvenida" },
                     {
-                      time: "09:00 - 10:30",
-                      title: "Conferencia: Tendencias del Mercado Global",
-                      speaker: "Analista Senior, PetroMarket",
+                      time: "07:15 - 07:50",
+                      title: "Inscripción de participantes",
                     },
                     {
-                      time: "10:45 - 12:15",
-                      title: "Panel: Regulación y Políticas Energéticas",
-                      speaker: "Representantes Gubernamentales",
-                    },
-                    { time: "12:30 - 14:00", title: "Almuerzo Networking" },
-                    {
-                      time: "14:15 - 15:45",
-                      title: "Taller: Estrategias de Inversión en el Sector",
-                      speaker: "Consultores, Energy Capital",
+                      time: "07:50 - 08:10",
+                      title:
+                        "La nueva frontera de la prevencion, analisis de riesgo enfocados en el cambio",
+                      speaker:
+                        "Luis Alfonso Del Angel Calles, QHSE Manager, Compañia Operadora SINS - EEUU",
                     },
                     {
-                      time: "16:00 - 17:00",
-                      title: "Conferencia de Clausura",
-                      speaker: "Director General, Ministerio de Energía",
+                      time: "08:10 - 08:30",
+                      title: "Tema a exponer (RESERVADO)",
+                      speaker:
+                        "Henry Antonio Pariguana Guerrero, Jefe Seguridad e Higiene Industrial y Seguridad Patrimonial, Compañia Operadora Petroleos del Peru - PETROPERU SA - Peru ",
+                    },
+                    {
+                      time: "08:30 - 08:50",
+                      title: "Tema a exponer (RESERVADO)",
+                      speaker:
+                        "Oscar Ferney Rncon Silva, Director Ejecutivo, ACIPET Asociacion Colombiana de Ingenieros de Petroleos, Energia y Tecnologias Afines - Colombia",
+                    },
+                    {
+                      time: "09:00 - 09:20",
+                      title:
+                        "Importancia de la Administracion Integral de Yacimientos en el desarrollo de los Campos de Hidrocarburos",
+                      speaker:
+                        "Rigoberto Rojas Gallo, Lider de Geociencias, Compañia de Servicios Petroleros PRECO SAC - Peru",
+                    },
+                    { time: "09:30 - 09:45", title: "Ponencia Reservada" },
+                    { time: "10:00 - 10:20", title: "Coffee Break" },
+                    {
+                      time: "10:30 - 12:15",
+                      title:
+                        "Visita Guiada a Refineria Talara - Petroperu SA (Inversionistas Extranjeros, Patrocinadores Internacionales y Auspiciadores Nacionales Total 30 PAX)",
+                    },
+                    { time: "12:15 - 14:00", title: "Almuerzo Libre" },
+                    {
+                      time: "14:00 - 14:20",
+                      title: "Ponencia Reservada Olympic Peru",
+                    },
+                    {
+                      time: "14:30 - 14:50",
+                      title: "Ponencia Reservada Dorf Ketal",
+                    },
+                    {
+                      time: "15:30 - 15:50",
+                      title: "Ponencia Reservada IMI Del Peru",
+                    },
+                    {
+                      time: "16:00 - 16:20",
+                      title: "Pitch Comercial Cosmos Agencia Maritima",
+                    },
+                    {
+                      time: "16:30 - 16:50",
+                      title: "Pitch Comercial Transportes Romero",
                     },
                     {
                       time: "17:00 - 18:00",
-                      title: "Ceremonia de Clausura y Despedida",
+                      title:
+                        "Pitch Comercial Compañias Petroleras (Murgisa, IGL, San Jose Obrero, Nexell Corporation, Towers Consulting)",
                     },
+                    { time: "18:00 - 18:15", title: "Cocktail de Clausura" },
                   ].map((item, index) => (
                     <div
                       key={index}
@@ -1479,9 +1705,8 @@ export default function Home() {
                   )}
                 </div>
                 {/* Segunda fila de patrocinadores Crudos Ligeros */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-center justify-items-center mt-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 items-center justify-items-center mt-6">
                   {[
-                    "/gotaamarron.jpg",
                     "/gotaamarron.jpg",
                     "/gotaamarron.jpg",
                     "/gotaamarron.jpg",
@@ -1765,7 +1990,7 @@ export default function Home() {
 
                 {/* Segunda fila */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["statusipg.webp", "holisticgo.webp", "viceversa.webp"].map(
+                  {["holisticgo.webp", "viceversa.webp", "powerful.jpg"].map(
                     (logo, index) => (
                       <div
                         key={index + 6}
@@ -1874,10 +2099,10 @@ export default function Home() {
                   {[
                     "proactive.webp",
                     "industrial.webp",
-                    "blcorredores.webp",
                     "tdm.webp",
                     "murgisa.webp",
                     "zaco.webp",
+                    "ricenergy.jpg",
                   ].map((logo, index) => (
                     <div
                       key={index + 12}
@@ -1930,7 +2155,7 @@ export default function Home() {
                 </div>
                 {/* Agregar quinta fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["igl.webp", "ksa.webp", "serfamed.webp"].map(
+                  {["igl.webp", "serfamed.webp", "romero.webp"].map(
                     (logo, index) => (
                       <div
                         key={index + 12}
@@ -1980,32 +2205,7 @@ export default function Home() {
                 </div>
                 {/* Agregar septima fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["diezdediez.jpg", "lpdprod.jpg", "powerful.jpg"].map(
-                    (logo, index) => (
-                      <div
-                        key={index + 12}
-                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
-                      >
-                        <Image
-                          src={logo}
-                          width={280}
-                          height={140}
-                          alt={
-                            index === 0
-                              ? "ProActive"
-                              : index === 1
-                              ? "Industrial Vox Analyzer"
-                              : "TRANSBER - Soluciones Logísticas Integradas"
-                          }
-                          className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                        />
-                      </div>
-                    )
-                  )}
-                </div>
-                {/* Agregar octava fila con 3 recuadros adicionales */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["ricenergy.jpg", "romero.webp"].map((logo, index) => (
+                  {["diezdediez.jpg", "lpdprod.jpg"].map((logo, index) => (
                     <div
                       key={index + 12}
                       className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
@@ -2026,6 +2226,29 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
+                {/* Agregar octava fila con 3 recuadros adicionales */}
+                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["ricenergy.jpg"].map((logo, index) => (
+                    <div
+                      key={index + 12}
+                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
+                    >
+                      <Image
+                        src={logo}
+                        width={280}
+                        height={140}
+                        alt={
+                          index === 0
+                            ? "ProActive"
+                            : index === 1
+                            ? "Industrial Vox Analyzer"
+                            : "TRANSBER - Soluciones Logísticas Integradas"
+                        }
+                        className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
+                </div> */}
               </div>
             </div>
           </div>
