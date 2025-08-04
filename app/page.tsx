@@ -726,6 +726,23 @@ export default function Home() {
                   isSpecial: false,
                   country: "Perú",
                 },
+                {
+                  name: "Ing. Arturo Rodríguez Paredes",
+                  role: "Gerente Corporativo Operaciones, Petroleos del Perú - Petroperú S.A",
+                  image: "rodriguezparedes.jpg",
+                  topic:
+                    "Sinergias de la Nueva Refineria Talara en la Industria Oil & Gas del Perú",
+                  isSpecial: false,
+                  country: "Perú",
+                },
+                {
+                  name: "Dr. Alejandro Narváez Liceras",
+                  role: "Presidente del Directorio, Petroleos del Perú - Petroperú S.A",
+                  image: "narvaezliceras.jpg",
+                  topic: "Proyecciones 2025-2030 Petroperú S.A",
+                  isSpecial: false,
+                  country: "Perú",
+                },
               ].map((speaker, index) => (
                 <Card
                   key={index}
@@ -1651,6 +1668,29 @@ export default function Home() {
                   )}
                 </div>
                 {/* Agregar cuarta fila con 3 recuadros adicionales */}
+                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["dorfketal.jpg"].map((logo, index) => (
+                    <div
+                      key={index + 3}
+                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
+                    >
+                      <Image
+                        src={logo || "/placeholder.svg"}
+                        alt={
+                          index === 0
+                            ? "Status International Petroleum Group"
+                            : index === 1
+                            ? "Holistic Go"
+                            : "Vice Versa Consulting"
+                        }
+                        width={480}
+                        height={140}
+                        className="object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+                {/* Agregar quinta fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
                   {[
                     "/gotaamarilla.jpg",
@@ -2205,7 +2245,36 @@ export default function Home() {
                 </div>
                 {/* Agregar septima fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["diezdediez.jpg", "lpdprod.jpg"].map((logo, index) => (
+                  {["diezdediez.jpg", "lpdprod.jpg", "hostalcesar.jpg"].map(
+                    (logo, index) => (
+                      <div
+                        key={index + 12}
+                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
+                      >
+                        <Image
+                          src={logo}
+                          width={280}
+                          height={140}
+                          alt={
+                            index === 0
+                              ? "ProActive"
+                              : index === 1
+                              ? "Industrial Vox Analyzer"
+                              : "TRANSBER - Soluciones Logísticas Integradas"
+                          }
+                          className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                        />
+                      </div>
+                    )
+                  )}
+                </div>
+                {/* Agregar octava fila con 3 recuadros adicionales */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {[
+                    "gruposanjose.jpg",
+                    "ruahoteles.jpg",
+                    "transportesrafael.jpg",
+                  ].map((logo, index) => (
                     <div
                       key={index + 12}
                       className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
@@ -2226,7 +2295,30 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                {/* Agregar octava fila con 3 recuadros adicionales */}
+                {/* Agregar novena fila con 3 recuadros adicionales */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["jcm.jpg", "jcmindustrial.jpg"].map((logo, index) => (
+                    <div
+                      key={index + 12}
+                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
+                    >
+                      <Image
+                        src={logo}
+                        width={280}
+                        height={140}
+                        alt={
+                          index === 0
+                            ? "ProActive"
+                            : index === 1
+                            ? "Industrial Vox Analyzer"
+                            : "TRANSBER - Soluciones Logísticas Integradas"
+                        }
+                        className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+                {/* Agregar decima fila con 3 recuadros adicionales */}
                 {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
                   {["ricenergy.jpg"].map((logo, index) => (
                     <div
