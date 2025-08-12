@@ -98,7 +98,7 @@ export default function Home() {
           ],
           [
             "09:00 - 09:20",
-            "Petroperu: Visión próximos 30 años (Upstream, Downstream y Midstream)",
+            "Proyecciones 2025-2030 Petroperú S.A",
             "Alejandro Narvaez Liceras, Presidente del Directorio PETROPERU SA",
           ],
           [
@@ -634,7 +634,7 @@ export default function Home() {
                   role: "Director General, Enerconsult SA",
                   image: "gonzalesavila.jpg",
                   topic:
-                    "El Rol de Perupetro, El Ejecutivo y el Legislativo en la reactivación petrolera de la región Piura",
+                    "Nuevo Marco Legislativo para la Reactivación Petrolera de la Región Piura",
                   isSpecial: false,
                   country: "Perú",
                 },
@@ -740,6 +740,32 @@ export default function Home() {
                   role: "Presidente del Directorio, Petroleos del Perú - Petroperú S.A",
                   image: "narvaezliceras.jpg",
                   topic: "Proyecciones 2025-2030 Petroperú S.A",
+                  isSpecial: false,
+                  country: "Perú",
+                },
+                {
+                  name: "Hendrikus Bernardus Fokkink",
+                  role: "Gerente de Cadena de Suministro para Ecuador, Colombia y Perú, SLB",
+                  image: "bernardusfokkink.jpg",
+                  topic:
+                    "Estrategia Energetica SLB: Innovación, IA y Producción Inteligente",
+                  isSpecial: false,
+                  country: "Perú",
+                },
+                {
+                  name: "Sergio Biedula",
+                  role: "Gerente General",
+                  image: "sergiobiedula.jpg",
+                  topic:
+                    "Remediacion Ambiental en Amazonia. Sinergia de Actores para Resultados Sostenibles",
+                  isSpecial: false,
+                  country: "Perú",
+                },
+                {
+                  name: "Armando Torres Valenzuela",
+                  role: "Gerente General, Estrella Petrolera del Perú",
+                  image: "torresvalenzuela.jpg",
+                  topic: "Seguridad de Procesos Basada en Riesgod en Upstream",
                   isSpecial: false,
                   country: "Perú",
                 },
@@ -873,8 +899,7 @@ export default function Home() {
                     },
                     {
                       time: "09:00 - 09:20",
-                      title:
-                        "Petroperu, Compañía Operadora Peruana: Visión para los próximos 30 años (Upstream, Downstream y Midstream)",
+                      title: "Proyecciones 2025-2030 Petroperú S.A",
                       speaker:
                         "Alejandro Narvaez Liceras, Presidente del Directorio PETROPERU SA",
                     },
@@ -1668,8 +1693,33 @@ export default function Home() {
                   )}
                 </div>
                 {/* Agregar cuarta fila con 3 recuadros adicionales */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["dorfketal.jpg", "slb.jpg", "olympic.jpg"].map(
+                    (logo, index) => (
+                      <div
+                        key={index + 3}
+                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
+                      >
+                        <Image
+                          src={logo || "/placeholder.svg"}
+                          alt={
+                            index === 0
+                              ? "Status International Petroleum Group"
+                              : index === 1
+                              ? "Holistic Go"
+                              : "Vice Versa Consulting"
+                          }
+                          width={480}
+                          height={140}
+                          className="object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                        />
+                      </div>
+                    )
+                  )}
+                </div>
+                {/* Agregar quinta fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["dorfketal.jpg"].map((logo, index) => (
+                  {["cosmos.jpg"].map((logo, index) => (
                     <div
                       key={index + 3}
                       className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-fit max-w-full overflow-hidden group"
@@ -1686,33 +1736,6 @@ export default function Home() {
                         width={480}
                         height={140}
                         className="object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                      />
-                    </div>
-                  ))}
-                </div>
-                {/* Agregar quinta fila con 3 recuadros adicionales */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {[
-                    "/gotaamarilla.jpg",
-                    "/gotaamarilla.jpg",
-                    "/gotaamarilla.jpg",
-                  ].map((logo, index) => (
-                    <div
-                      key={index + 3}
-                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] aspect-[3/1.5] flex items-center justify-center overflow-hidden group"
-                    >
-                      <Image
-                        src={logo || "/placeholder.svg"}
-                        alt={
-                          index === 0
-                            ? "Status International Petroleum Group"
-                            : index === 1
-                            ? "Holistic Go"
-                            : "Vice Versa Consulting"
-                        }
-                        width={280}
-                        height={140}
-                        className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
                       />
                     </div>
                   ))}
@@ -2297,7 +2320,32 @@ export default function Home() {
                 </div>
                 {/* Agregar novena fila con 3 recuadros adicionales */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["jcm.jpg", "jcmindustrial.jpg"].map((logo, index) => (
+                  {["jcm.jpg", "jcmindustrial.jpg", "vivemas.jpg"].map(
+                    (logo, index) => (
+                      <div
+                        key={index + 12}
+                        className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
+                      >
+                        <Image
+                          src={logo}
+                          width={280}
+                          height={140}
+                          alt={
+                            index === 0
+                              ? "ProActive"
+                              : index === 1
+                              ? "Industrial Vox Analyzer"
+                              : "TRANSBER - Soluciones Logísticas Integradas"
+                          }
+                          className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                        />
+                      </div>
+                    )
+                  )}
+                </div>
+                {/* Agregar decima fila con 3 recuadros adicionales */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
+                  {["imi.jpg"].map((logo, index) => (
                     <div
                       key={index + 12}
                       className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
@@ -2318,29 +2366,6 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                {/* Agregar decima fila con 3 recuadros adicionales */}
-                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center mt-6">
-                  {["ricenergy.jpg"].map((logo, index) => (
-                    <div
-                      key={index + 12}
-                      className="bg-white rounded-lg border-2 border-amber-500 shadow-md hover:shadow-lg transition-all duration-300 w-full max-w-[280px] flex items-center justify-center overflow-hidden group"
-                    >
-                      <Image
-                        src={logo}
-                        width={280}
-                        height={140}
-                        alt={
-                          index === 0
-                            ? "ProActive"
-                            : index === 1
-                            ? "Industrial Vox Analyzer"
-                            : "TRANSBER - Soluciones Logísticas Integradas"
-                        }
-                        className="w-auto h-auto max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
-                      />
-                    </div>
-                  ))}
-                </div> */}
               </div>
             </div>
           </div>
