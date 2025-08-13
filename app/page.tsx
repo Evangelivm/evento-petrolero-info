@@ -769,6 +769,25 @@ export default function Home() {
                   isSpecial: false,
                   country: "Perú",
                 },
+
+                {
+                  name: "Oscar Vera Gargurevich",
+                  role: "Gerente General, Petroleos del Peru - Petroperu S.A.",
+                  image: "veragargurevich.jpg",
+                  topic:
+                    "Petroperu: Innovacion, Sostenibilidad y Estrategias para la Reactivacion del Sector Petrolero en el Peru",
+                  isSpecial: false,
+                  country: "Perú",
+                },
+                {
+                  name: "Henry Pariguana",
+                  role: "Jefe Seguridad Patrimonial, Petroleos del Peru - Petroperu S.A.",
+                  image: "pariguana.jpg",
+                  topic:
+                    "Petroperu: Innovacion, Sostenibilidad y Estrategias para la Reactivacion del Sector Petrolero en el Peru",
+                  isSpecial: false,
+                  country: "Perú",
+                },
               ].map((speaker, index) => (
                 <Card
                   key={index}
